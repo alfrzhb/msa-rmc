@@ -1,6 +1,6 @@
 # RMC MSA Analysis Tool
 
-**Status:** Requirements and calculation audit documented — DRAFT / NOT FROZEN
+**Status:** Final Calculation Review v0.2 published for review — DRAFT / NOT FROZEN
 
 A lightweight, web-based Measurement System Analysis (MSA) application for an initial single-company client of PT Ratama Mitra Kualitas. This repository starts with requirements and documentation; implementation and technology choices are not finalized.
 
@@ -12,7 +12,7 @@ Help authorized employees create Variable or Attribute MSA studies, enter measur
 
 - **MVP:** Individual login, Admin/Supervisor/Operator roles, MSA Variable and Attribute, data entry, study lifecycle, history, audit trail, and PDF reporting.
 - **Future:** Statistical Process Control (SPC), multi-client management, and advanced analytical methods.
-- **Calculation direction:** Variable Average & Range with the Ratama 10×3×3 preset; Attribute Kappa vs Reference under review using the Ratama 50×3×2 workbook.\n- **Pending validation:** Customer acceptance criteria, Attribute decision policy, study design constraints, alternative sizes and several permission details.
+- **Calculation direction:** Variable Average & Range with the Ratama 10×3×3 preset; Attribute Kappa vs Reference under review using the Ratama 50×3×2 workbook.\n- **Calculation review:** [Final Calculation Review v0.2](docs/03-calculations/final-calculation-review-v0.2.md) documents cross-method differences, corrected test vectors and approval gates.\n- **Pending validation:** Customer acceptance criteria, pooled Attribute Kappa methodology, review and freeze gates, study assumptions, alternative study sizes.
 
 ## Documentation
 

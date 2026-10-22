@@ -1,10 +1,12 @@
 # Quality Assurance / UAT
 
-**Status:** DRAFT — pending implementation; no automated tests have yet been executed.
+**Status:** REVIEW DRAFT — implementation pending; no application regression suite has yet been run.
 
-## Planning artifacts
+## Review-ready artifacts
 
-- [Calculation QA & Regression Plan v0.1](calculation-test-plan-v0.1.md) — numeric golden values, workbook discrepancies, statistical edge cases and role/lifecycle checks.
-- [Source audit](../03-calculations/ratama-source-audit-v0.1.md) — supporting evidence and limitations.
+- [Calculation QA & Regression Plan v0.1](calculation-test-plan-v0.1.md) — numerical golden values, data-validation cases, role/lifecycle safeguards.
+- [Calculation Review Regression Matrix v0.2](calculation-review-test-matrix-v0.2.md) — Attribute pooled-vs-trial-average Kappa, sample-vs-decision denominator, NDC display edge and acceptance boundary tests.
+- [Final Calculation Review v0.2](../03-calculations/final-calculation-review-v0.2.md) — method rationale, limitations and outstanding gates.
+- [Source audit v0.1](../03-calculations/ratama-source-audit-v0.1.md) — original source reconciliation.
 
-Future executable tests should cover authentication, authorization, study versioning, calculation correctness, report consistency, error handling and client acceptance. Do not upload raw confidential client workbooks to this public repository.
+Do not publish raw client workbooks, appraiser identities or confidential study measurements to this public repository.

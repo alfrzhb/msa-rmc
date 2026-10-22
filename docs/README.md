@@ -1,7 +1,7 @@
 # Documentation Index
 
 **Project:** RMC MSA Analysis Tool  
-**Current phase:** Requirements gathering and source calculation audit  
+**Current phase:** Final Calculation Review for Variable and Attribute — DRAFT / NOT FROZEN  
 **Document baseline:** v0.3 — DRAFT / NOT FROZEN
 
 ## Directory map
@@ -10,17 +10,17 @@
 | --- | --- | --- |
 | [01-discovery](01-discovery/requirements-analysis-v0.3.md) | Business context, proposed product scope, user flow, current analysis | DRAFT |
 | [02-requirements](02-requirements/README.md) | Detailed functional and non-functional requirements | Pending |
-| [03-calculations](03-calculations/README.md) | Audited source results, Variable draft formulas and Attribute candidate methods | DRAFT / review |
+| [03-calculations](03-calculations/README.md) | Final Calculation Review v0.2, source audit, Variable formulas and Attribute candidates | REVIEW DRAFT |
 | [04-ui-ux](04-ui-ux/README.md) | User journeys, fields, screens and prototypes | Pending |
 | [05-architecture](05-architecture/README.md) | Data model, API, authentication, infrastructure | Pending |
-| [06-quality-assurance](06-quality-assurance/README.md) | Statistical regression plan, UAT and release criteria | DRAFT / pending implementation |
+| [06-quality-assurance](06-quality-assurance/README.md) | Calculation regression plan and v0.2 method-comparison cases | DRAFT / pending implementation |
 | [decisions](decisions/decision-log.md) | Decision register, approvals, outstanding questions | Active |
 
 ## Reading order
 
 1. [Requirements Analysis v0.3 — DRAFT](01-discovery/requirements-analysis-v0.3.md)
 2. [Decision Log](decisions/decision-log.md)
-3. [Ratama source audit v0.1](03-calculations/ratama-source-audit-v0.1.md)\n4. [Variable calculation spec v0.1](03-calculations/variable-msa-calculation-spec-v0.1.md)\n5. [Attribute audit v0.1](03-calculations/attribute-msa-audit-v0.1.md)\n6. [Calculation QA plan v0.1](06-quality-assurance/calculation-test-plan-v0.1.md)\n7. Freeze only after the remaining approval gates pass.
+3. [Final Calculation Review v0.2](03-calculations/final-calculation-review-v0.2.md)\n4. [Ratama source audit v0.1](03-calculations/ratama-source-audit-v0.1.md)\n5. [Variable calculation spec v0.1](03-calculations/variable-msa-calculation-spec-v0.1.md)\n6. [Attribute audit v0.1](03-calculations/attribute-msa-audit-v0.1.md)\n7. [Calculation QA plan v0.1](06-quality-assurance/calculation-test-plan-v0.1.md)\n8. [Calculation review regression addendum v0.2](06-quality-assurance/calculation-review-test-matrix-v0.2.md)\n9. Freeze only after the remaining approval gates pass.
 
 ## Approval rules
 

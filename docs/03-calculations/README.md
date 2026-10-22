@@ -1,19 +1,23 @@
 # MSA Calculation Specifications
 
-**Status:** DRAFT — AUDITED, NOT FROZEN (2026-10-22)
+**Status:** REVIEW DRAFT — NOT FROZEN (2026-10-22)
 
-This folder documents the independent review of Ratama's Excel examples and training methods.
+## Current review package
 
-## Read in order
+**Start here:** [Final Calculation Review v0.2](final-calculation-review-v0.2.md)
 
-1. [Ratama Source Audit v0.1](ratama-source-audit-v0.1.md) — source inventory, study-design differences, independently recalculated outputs, errors and risks.
-2. [Variable MSA Calculation Specification v0.1](variable-msa-calculation-spec-v0.1.md) — Average & Range draft, Ratama preset, formulas, tolerances, NDC and edge cases.
-3. [Attribute MSA Audit v0.1](attribute-msa-audit-v0.1.md) — Kappa-vs-Reference audit, agreement, missed-NG and false-reject indicators.
+The review reconciles Ratama's intended methods and the independently recomputed Variable/Attribute workbook data. It also distinguishes **Ratama pooled Kappa** from **Minitab mean per-trial Kappa**, and per-decision agreement from per-sample agreement. It documents final approval gates; it does not freeze the project.
 
-## Decision state
+## Supporting audit trail
 
-- **Agreed direction:** Variable Average & Range with 10 × 3 × 3 Ratama preset, paired %Study Var/%Tolerance reporting, NDC and proper numerical corrections.
-- **Proposed but not approved:** Final judgment composite, Attribute Kappa method and companion safety metrics, threshold boundary policy, alternative study sizes.
-- **Unverified implementation:** Raw XLSX formula-cell dependency scan and runnable application tests.
+1. [Ratama Source Audit v0.1](ratama-source-audit-v0.1.md) — source inventory, underlying study protocols, source anomalies and numerical risks.
+2. [Variable MSA Calculation Specification v0.1](variable-msa-calculation-spec-v0.1.md) — Ratama Average & Range, 10×3×3 preset, corrected formulas, NDC and tolerance.
+3. [Attribute MSA Audit v0.1](attribute-msa-audit-v0.1.md) — Ratama 50×3×2 pooled Kappa and decision-level class-conditional risk indicators.
+4. [Calculation Review Regression Matrix v0.2](../06-quality-assurance/calculation-review-test-matrix-v0.2.md) — additional method-comparison and counting-policy tests.
 
-Existing workbook results that contradict verified formulas are *not authoritative*. Original source workbooks have not been copied to this public repository.
+## Current position
+
+- **Direction accepted:** Variable Average & Range; Variable 10×3×3 preset; Attribute Kappa-vs-reference with agreement/error diagnostics candidate.
+- **Verified:** Arithmetic from 90 Variable measurements and 300 Attribute decisions, including correction of Excel defects.
+- **Open:** Ratama final Kappa method signoff, final composite decision rules, threshold boundaries, low-NDC convention, error-risk policy and executable implementation tests.
+- **Do not claim:** Exact Minitab output parity for pooled Kappa, or FROZEN approval.
