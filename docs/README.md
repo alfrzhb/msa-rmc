@@ -20,7 +20,13 @@
 
 1. [Requirements Analysis v0.3 — DRAFT](01-discovery/requirements-analysis-v0.3.md)
 2. [Decision Log](decisions/decision-log.md)
-3. [Final Calculation Review v0.2](03-calculations/final-calculation-review-v0.2.md)\n4. [Ratama source audit v0.1](03-calculations/ratama-source-audit-v0.1.md)\n5. [Variable calculation spec v0.1](03-calculations/variable-msa-calculation-spec-v0.1.md)\n6. [Attribute audit v0.1](03-calculations/attribute-msa-audit-v0.1.md)\n7. [Calculation QA plan v0.1](06-quality-assurance/calculation-test-plan-v0.1.md)\n8. [Calculation review regression addendum v0.2](06-quality-assurance/calculation-review-test-matrix-v0.2.md)\n9. Freeze only after the remaining approval gates pass.
+3. [Final Calculation Review v0.2](03-calculations/final-calculation-review-v0.2.md)
+4. [Ratama source audit v0.1](03-calculations/ratama-source-audit-v0.1.md)
+5. [Variable calculation spec v0.1](03-calculations/variable-msa-calculation-spec-v0.1.md)
+6. [Attribute audit v0.1](03-calculations/attribute-msa-audit-v0.1.md)
+7. [Calculation QA plan v0.1](06-quality-assurance/calculation-test-plan-v0.1.md)
+8. [Calculation review regression addendum v0.2](06-quality-assurance/calculation-review-test-matrix-v0.2.md)
+9. Freeze only after the remaining approval gates pass.
 
 ## Approval rules
 

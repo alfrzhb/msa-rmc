@@ -185,7 +185,7 @@ Minitab's documented known-standard Kappa first computes the **Kappa of each tri
 
 1. **Variable:** Accept Ratama Average & Range 10×3×3 with corrected EV/AV/GRR/PV/TV, %Study Var, %Tolerance, NDC and R-chart. Keep %Study Var and %Tolerance as separate displayed assessments.
 2. **Variable decision:** Retain Ratama 10/30% bands and NDC≥5; mark Conditional or conflicting/suspicious results as **Review Required** pending explicit supervisor confirmation; no automatic certification.
-3. **Attribute:** Accept Ratama **pooled** appraiser-vs-reference Kappa 50×3×2 as named/verisoned MVP method; publish accompanying decision-level accuracy, within-appraiser match, all-trials-correct match, missed NG and false reject.
+3. **Attribute:** Accept Ratama **pooled** appraiser-vs-reference Kappa 50×3×2 as named/versioned MVP method; publish accompanying decision-level accuracy, within-appraiser match, all-trials-correct match, missed NG and false reject.
 4. **Attribute decision:** Retain candidate 0.40/0.75 Ratama bands per appraiser; retain NG-miss warnings, but do **not** invent NG error acceptance thresholds or global pass criteria.
 5. **Configuration:** Ship only workbook-compatible presets initially; architecture can later add validated variants without silently reusing constants.
 6. **NDC low-end:** Adopt Minitab-style min=1 when GRR>0 and NDCraw<1, or explicitly retain workbook floor=0; choose and version one behavior before implementation.
