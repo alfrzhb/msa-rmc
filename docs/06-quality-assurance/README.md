@@ -1,13 +1,10 @@
 # Quality Assurance / UAT
 
-**Status:** PENDING — NOT FROZEN
+**Status:** DRAFT — pending implementation; no automated tests have yet been executed.
 
-Prepare tests for:
-- Role-based access and ownership boundaries.
-- Variable and Attribute calculations compared with audited, approved reference data.
-- Edge cases, invalid inputs, no NaN / Infinity outputs.
-- Draft, finalize, revisions, history, audit trail and soft delete.
-- PDF report correctness and reproducibility.
-- Client acceptance tests before deployment.
+## Planning artifacts
 
-No test suite has been implemented or executed yet.
+- [Calculation QA & Regression Plan v0.1](calculation-test-plan-v0.1.md) — numeric golden values, workbook discrepancies, statistical edge cases and role/lifecycle checks.
+- [Source audit](../03-calculations/ratama-source-audit-v0.1.md) — supporting evidence and limitations.
+
+Future executable tests should cover authentication, authorization, study versioning, calculation correctness, report consistency, error handling and client acceptance. Do not upload raw confidential client workbooks to this public repository.
