@@ -1,7 +1,7 @@
 # Decision Log — RMC MSA Analysis Tool
 
 **Document status:** DRAFT / LIVE REGISTER  
-**Last reviewed:** 22 October 2026 (Final Calculation Review v0.2)  
+**Last reviewed:** 23 October 2026 (Calculation Decisions v0.3)  
 **Basis:** Requirements Analysis v0.3 and stakeholder feedback
 
 This log distinguishes an item accepted in a requirements review from a full, formally `FROZEN` specification.
@@ -28,22 +28,35 @@ This log distinguishes an item accepted in a requirements review from a full, fo
 | DEC-016 | Attribute pooled Kappa vs Reference plus agreement/error indicators is accepted as a candidate for final review | Preserves Ratama workbook and flags missed NG; still requires domain criteria approval | Candidate method direction agreed, NOT FROZEN |
 | DEC-017 | Ratama pooled per-appraiser Kappa differs from mean of per-trial known-standard Kappa as documented by Minitab | Do not mislabel analytical methods or claim identical software results | Independent methodological audit |
 | DEC-018 | Separate Attribute per-decision accuracy, per-sample all-trials-correct, and within-appraiser repeatability | Prevent misleading agreement interpretation | Recommended for final review, NOT FROZEN |
+| DEC-019 | Use Ratama pooled appraiser-vs-reference Kappa as MVP main Attribute metric, with distinct indicators and method/version label | User accepted recommendation G1; Minitab trial-mean Kappa remains a different method | Accepted for product design; Ratama domain approval open |
+| DEC-020 | Variable status shows Ratama %GRR band, separate NDC/R-chart checks and %Tolerance; trigger Review Required on conflicts | Do not mask statistical warnings with one simple OK | Accepted for product design; customer decision policy open |
+| DEC-021 | Adopt Ratama workbook threshold semantics and full-precision comparisons; literal floor for positive-GRR NDC raw | Keep source-compatible boundaries; distinguish Minitab low-end minimum-1 convention | Accepted for product design; domain review before FROZEN |
+| DEC-022 | Use audited golden test vectors and edge-case plan for implementation; no test-run claim until code exists | Statistical reproducibility and error detection | Accepted testing approach |
+| DEC-023 | Attribute MVP has one study with three appraiser tabs; one authorized owner/Supervisor enters all paper-collected data | Supports either combined paper or separate paper sheets without changing operator permissions | Recommended workflow; user reviewing |
+| DEC-024 | Distinguish appraiser identity from logged-in data-entry identity; preserve per-cell audit attribution | Inspection performer and system editor are not necessarily the same person | Recommended workflow |
+| DEC-025 | Apply Ratama/AIAG-aligned study collection guidance and applicable customer-specific MSA requirements | Standards-based design is not customer signoff | Accepted principle; client protocol validation open |
 
 ## Open decisions (DISCUSSION REQUIRED)
 
 | ID | Question | Current proposal |
 | --- | --- | --- |
-| OPEN-001 | Attribute final method approval and naming | Candidate approved for review: Ratama pooled Kappa vs Reference with safety indicators, unlike Minitab trial-mean Kappa; domain signoff needed |
+| OPEN-001 | Attribute final method approval and naming | User accepts Ratama pooled Kappa vs Reference as design direction; Ratama/client quality-domain signoff still needed |
 | OPEN-002 | Flexible vs locked part/appraiser/trial counts | Workbook configurations are initial presets; alternatives need verified constants, protocol and acceptance tests |
 | OPEN-003 | Calculation version and final signoff | Source data outputs independently audited; test vectors in calculation documents; raw XLSX formula-cell scan and acceptance pending |
-| OPEN-004 | Judgment, threshold boundary and %Tolerance policy | Ratama-based candidate 10/30%, NDC >=5 and Kappa 0.40/0.75; customer confirmation and composite-policy decision required |
+| OPEN-004 | Judgment, threshold boundary and %Tolerance policy | User accepts Ratama-based bands and Review Required for conflicts; customer-specific acceptance/composite policy signoff still required |
 | OPEN-005 | Can Operators view all studies or only their own? | Pending |
 | OPEN-006 | Exact Admin and Supervisor permissions, including deletion and revision | Proposed matrix needs detailed approval |
 | OPEN-007 | Finalize and revision lifecycle details | Proposed, not FROZEN |
 | OPEN-008 | Dashboard fields, detailed PDF format, branding | Proposed, not FROZEN |
 | OPEN-009 | Technology stack, hosting, backup and security implementation | Decide after requirements and calculations |
 | OPEN-010 | Attribute final risk and accuracy/consistency policy | Decision accuracy, all-trials-correct, within-appraiser match, missed-NG and false-reject definitions reviewed; customer-specific acceptance policy remains open |
-| OPEN-011 | Low-end NDC display when raw<1 | Ratama floor would yield 0, Minitab floors then uses minimum 1; choose one versioned convention |
+| OPEN-011 | Low-end NDC convention domain check | Design uses Ratama literal floor(NDCraw) when GRR>0; no Minitab minimum-1 parity claim; Ratama reviewer confirmation pending |
+
+## Product Review — 2026-10-23
+
+- [Calculation Decisions v0.3](../03-calculations/calculation-decision-review-v0.3.md) — user's accepted G1/G2/G4/G6 direction and standards-aligned G5 constraints (not final domain signoff).
+- [Attribute Study Input Workflow v0.1](../04-ui-ux/attribute-study-input-flow-v0.1.md) — proposed one-study/three-appraiser sections to handle one consolidated or three separate paper forms, without multi-user study-edit rights in the initial MVP.
+- **Still open:** Ratama's missed NG / false-reject acceptance criteria; combined Attribute study judgement; final operational sample protocol and customer approvals; user review of input flow.
 
 ## Final Calculation Review — 2026-10-22
 
