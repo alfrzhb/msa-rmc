@@ -1,7 +1,7 @@
 # Decision Log — RMC MSA Analysis Tool
 
 **Document status:** DRAFT / LIVE REGISTER  
-**Last reviewed:** 23 October 2026 (Field & Screen Draft v0.1)  
+**Last reviewed:** 23 October 2026 (Field & Screen revision v0.2)  
 **Basis:** Requirements Analysis v0.3 and stakeholder feedback
 
 This log distinguishes an item accepted in a requirements review from a full, formally `FROZEN` specification.
@@ -46,8 +46,8 @@ This log distinguishes an item accepted in a requirements review from a full, fo
 | OPEN-003 | Calculation version and final signoff | Source data outputs independently audited; test vectors in calculation documents; raw XLSX formula-cell scan and acceptance pending |
 | OPEN-004 | Judgment, threshold boundary and %Tolerance policy | User accepts Ratama-based bands and Review Required for conflicts; customer-specific acceptance/composite policy signoff still required |
 | OPEN-005 | Can Operators view all studies or only their own? | Pending |
-| OPEN-006 | Exact Admin and Supervisor permissions, including deletion and revision | Proposed matrix needs detailed approval |
-| OPEN-007 | Finalize and revision lifecycle details | Proposed, not FROZEN |
+| OPEN-006 | Exact Admin and Supervisor permissions, including deletion and revision | Field & Screen v0.2 proposes Operator Submit for Review and **Supervisor-only Finalize** (conservative interim default); Ratama approval still required |
+| OPEN-007 | Finalize and revision lifecycle details | v0.2 proposes Submit for Review as flag on Draft, Supervisor Finalize of clean/current results, revisions remain immutable; exception dispositions need Ratama approval |
 | OPEN-008 | Dashboard fields, detailed PDF format, branding | Proposed, not FROZEN |
 | OPEN-009 | Technology stack, hosting, backup and security implementation | Decide after requirements and calculations |
 | OPEN-010 | Attribute numerical missed-NG / false-reject limits and whole-study verdict | Standard preset + versioned configurable APPROVED policy agreed as design; actual limits/customer approval and global verdict remain open |
@@ -86,6 +86,13 @@ This log distinguishes an item accepted in a requirements review from a full, fo
 4. Preserve the previous version in Git history; never silently rewrite a frozen baseline.
 
 No documents in this repository are currently FROZEN.
+
+## Field & Screen Revision v0.2 — 2026-10-23
+
+- [Field & Screen Specification v0.2](../04-ui-ux/field-and-screen-specification-v0.2.md): **revised draft, NOT FROZEN**. Kept [v0.1](../04-ui-ux/field-and-screen-specification-v0.1.md) for comparison and history.
+- Revised four UX points: Core/Advanced Details, Operator Submit for Review with **Supervisor-only Finalize as conservative proposal**, Attribute Known Reference restricted to separate Supervisor subview, and primary judgement/warnings before expandable calculation formulas.
+- Review conditions remain OPEN: Ratama approval of Finalize authority and exception handling, reference custodian, Operator visibility, policy risk thresholds, and PDF branding; this document is not implementation approval.
+- QA: 25 screen acceptance cases are specified, **not executed**.
 
 ## Field and Screen Draft Log — 2026-10-23
 

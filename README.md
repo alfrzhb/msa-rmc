@@ -1,6 +1,6 @@
 # RMC MSA Analysis Tool
 
-**Status:** Field & Screen Specification v0.1 prepared for review — DRAFT / NOT FROZEN
+**Status:** Field & Screen Specification v0.2 revised for review — DRAFT / NOT FROZEN
 
 A lightweight, web-based Measurement System Analysis (MSA) application for an initial single-company client of PT Ratama Mitra Kualitas. This repository starts with requirements and documentation; implementation and technology choices are not finalized.
 
@@ -12,11 +12,13 @@ Help authorized employees create Variable or Attribute MSA studies, enter measur
 
 - **MVP:** Individual login, Admin/Supervisor/Operator roles, MSA Variable and Attribute, data entry, study lifecycle, history, audit trail, and PDF reporting.
 - **Future:** Statistical Process Control (SPC), multi-client management, and advanced analytical methods.
-- **Calculation direction:** Variable Average & Range with the Ratama 10×3×3 preset; Attribute Kappa vs Reference under review using the Ratama 50×3×2 workbook.\n- **Calculation review:** [Final Calculation Review v0.2](docs/03-calculations/final-calculation-review-v0.2.md) documents cross-method differences, corrected test vectors and approval gates.\n- **Pending validation:** Customer acceptance criteria, pooled Attribute Kappa methodology, review and freeze gates, study assumptions, alternative study sizes.
+- **Calculation direction:** Variable Average & Range with the Ratama 10×3×3 preset; Attribute Kappa vs Reference under review using the Ratama 50×3×2 workbook.
+- **Calculation review:** [Final Calculation Review v0.2](docs/03-calculations/final-calculation-review-v0.2.md) documents cross-method differences, corrected test vectors and approval gates.
+- **Pending validation:** Customer acceptance criteria, pooled Attribute Kappa methodology, review and freeze gates, study assumptions, alternative study sizes.
 
 ## Documentation
 
-- [Field & Screen Specification v0.1](docs/04-ui-ux/field-and-screen-specification-v0.1.md): field dictionary, 13 screen types, permissions, validation and QA scenarios.
+- [Field & Screen Specification v0.2](docs/04-ui-ux/field-and-screen-specification-v0.2.md): simplified setup, supervisor review/finalize proposal, restricted Attribute references, results-first hierarchy, 25 UX checks. [v0.1 archive](docs/04-ui-ux/field-and-screen-specification-v0.1.md).
 
 Start at [Documentation Index](docs/README.md), then read the current [Requirements Analysis v0.3](docs/01-discovery/requirements-analysis-v0.3.md), [Calculation Source Audit](docs/03-calculations/ratama-source-audit-v0.1.md), the [Variable Calculation Draft](docs/03-calculations/variable-msa-calculation-spec-v0.1.md), the [Attribute Audit](docs/03-calculations/attribute-msa-audit-v0.1.md), the [Calculation QA Plan](docs/06-quality-assurance/calculation-test-plan-v0.1.md), and the [Decision Log](docs/decisions/decision-log.md).
 

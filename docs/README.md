@@ -1,7 +1,7 @@
 # Documentation Index
 
 **Project:** RMC MSA Analysis Tool  
-**Current phase:** Calculation decisions accepted for design; Attribute input workflow review — DRAFT / NOT FROZEN  
+**Current phase:** Field & Screen v0.2 revised for stakeholder review — DRAFT / NOT FROZEN  
 **Document baseline:** v0.3 — DRAFT / NOT FROZEN
 
 ## Directory map
@@ -11,7 +11,7 @@
 | [01-discovery](01-discovery/requirements-analysis-v0.3.md) | Business context, proposed product scope, user flow, current analysis | DRAFT |
 | [02-requirements](02-requirements/README.md) | Detailed functional and non-functional requirements | Pending |
 | [03-calculations](03-calculations/README.md) | Final Calculation Review v0.2, source audit, Variable formulas and Attribute candidates | REVIEW DRAFT |
-| [04-ui-ux](04-ui-ux/README.md) | Attribute study data-entry workflow and future screen designs | DRAFT |
+| [04-ui-ux](04-ui-ux/README.md) | Field & Screen v0.2, reference access, review/finalization flow and Attribute input | REVIEW DRAFT |
 | [05-architecture](05-architecture/README.md) | Data model, API, authentication, infrastructure | Pending |
 | [06-quality-assurance](06-quality-assurance/README.md) | Calculation regression plan and v0.2 method-comparison cases | DRAFT / pending implementation |
 | [decisions](decisions/decision-log.md) | Decision register, approvals, outstanding questions | Active |
@@ -26,7 +26,11 @@
 6. [Attribute audit v0.1](03-calculations/attribute-msa-audit-v0.1.md)
 7. [Calculation QA plan v0.1](06-quality-assurance/calculation-test-plan-v0.1.md)
 8. [Calculation review regression addendum v0.2](06-quality-assurance/calculation-review-test-matrix-v0.2.md)
-9. [Calculation Decisions v0.3](03-calculations/calculation-decision-review-v0.3.md)\n10. [Attribute Study Input Workflow v0.1](04-ui-ux/attribute-study-input-flow-v0.1.md)\n11. Freeze only after the remaining approval gates pass.
+9. [Calculation Decisions v0.3](03-calculations/calculation-decision-review-v0.3.md)
+10. [Field & Screen Specification v0.2 — current DRAFT](04-ui-ux/field-and-screen-specification-v0.2.md)
+11. [Field & Screen Specification v0.1 — archived DRAFT](04-ui-ux/field-and-screen-specification-v0.1.md)
+12. [Attribute Study Input Workflow v0.1](04-ui-ux/attribute-study-input-flow-v0.1.md)
+13. Freeze only after the remaining approval gates pass.
 
 ## Approval rules
 
