@@ -1,7 +1,7 @@
 # Decision Log — RMC MSA Analysis Tool
 
 **Document status:** DRAFT / LIVE REGISTER  
-**Last reviewed:** 23 October 2026 (Calculation Decisions v0.3)  
+**Last reviewed:** 23 October 2026 (Attribute Judgment Policy v0.1)  
 **Basis:** Requirements Analysis v0.3 and stakeholder feedback
 
 This log distinguishes an item accepted in a requirements review from a full, formally `FROZEN` specification.
@@ -35,6 +35,7 @@ This log distinguishes an item accepted in a requirements review from a full, fo
 | DEC-023 | Attribute MVP has one study with three appraiser tabs; one authorized owner/Supervisor enters all paper-collected data | Supports either combined paper or separate paper sheets without changing operator permissions | Recommended workflow; user reviewing |
 | DEC-024 | Distinguish appraiser identity from logged-in data-entry identity; preserve per-cell audit attribution | Inspection performer and system editor are not necessarily the same person | Recommended workflow |
 | DEC-025 | Apply Ratama/AIAG-aligned study collection guidance and applicable customer-specific MSA requirements | Standards-based design is not customer signoff | Accepted principle; client protocol validation open |
+| DEC-026 | Attribute uses Standard Preset + Configurable Approved Policy: fixed validated formulas, Ratama-derived default judgment bands, versioned Supervisor-managed acceptance criteria requiring Quality approval | Keeps operator UX simple without inventing universal NG-miss/false-reject limits or altering historic results | User agreed to product design; domain thresholds NOT FROZEN |
 
 ## Open decisions (DISCUSSION REQUIRED)
 
@@ -49,8 +50,13 @@ This log distinguishes an item accepted in a requirements review from a full, fo
 | OPEN-007 | Finalize and revision lifecycle details | Proposed, not FROZEN |
 | OPEN-008 | Dashboard fields, detailed PDF format, branding | Proposed, not FROZEN |
 | OPEN-009 | Technology stack, hosting, backup and security implementation | Decide after requirements and calculations |
-| OPEN-010 | Attribute final risk and accuracy/consistency policy | Decision accuracy, all-trials-correct, within-appraiser match, missed-NG and false-reject definitions reviewed; customer-specific acceptance policy remains open |
+| OPEN-010 | Attribute numerical missed-NG / false-reject limits and whole-study verdict | Standard preset + versioned configurable APPROVED policy agreed as design; actual limits/customer approval and global verdict remain open |
 | OPEN-011 | Low-end NDC convention domain check | Design uses Ratama literal floor(NDCraw) when GRR>0; no Minitab minimum-1 parity claim; Ratama reviewer confirmation pending |
+
+## Attribute Policy Agreement — 2026-10-23
+
+- [Attribute Judgment Policy v0.1](../03-calculations/attribute-judgment-policy-v0.1.md): accepted **Standard Preset + Configurable Approved Policy** design, with formulas noneditable, Supervisor-only selection/configuration of Quality-approved criteria, policy version snapshot at Finalize, and no automatic OK for unapproved risk limits.
+- Ratama's Kappa bands are the candidate preset; the final customer-approved missed-NG and false-reject numbers are not yet determined.
 
 ## Product Review — 2026-10-23
 
