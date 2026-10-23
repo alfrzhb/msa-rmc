@@ -112,3 +112,9 @@ No documents in this repository are currently FROZEN.
 - Includes 13 screen types, a shared field dictionary, three appraiser tabs per MSA, roles, status transitions, policy selection, PDF contents and screen acceptance checks.
 - This is a DRAFT review document, not a newly approved or frozen baseline.
 - Pending: Attribute reference-entry authorization; operator Finalize rule; operator history visibility; PDF branding, and Ratama Quality acceptance thresholds.
+
+## Wireframe produced — 2026-10-23
+
+- [Wireframe Review v0.1](../04-ui-ux/wireframe-review-v0.1.md) records the 13-screen low-fidelity prototype, interaction matrix, browser/screenshot review and UX checkpoints. The interactive standalone HTML and screenshots were delivered in conversation, **not pushed as application source to GitHub**.
+- This is a design artifact only; no statistical engine, real login, backend approval or production PDF exists.
+- Approval/visibility decisions remain those in DEC-027 to DEC-030. The wireframe does not change or FROZEN-approve any calculations or customer Quality limits.

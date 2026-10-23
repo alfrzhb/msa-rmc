@@ -2,6 +2,10 @@
 
 **Current:** [Field & Screen Specification v0.3](field-and-screen-specification-v0.3.md) — **DRAFT, NOT FROZEN** (2026-10-23)
 
+## Wireframe review
+
+- [Wireframe Review v0.1](wireframe-review-v0.1.md) — 13-screen coverage, low-fidelity navigation and UI checklist. Standalone HTML and screenshots were supplied in the project conversation; not stored as production code in this repository.
+
 ## Specifications
 - [Field & Screen Specification v0.3](field-and-screen-specification-v0.3.md) — 13 screens, 35 UI acceptance cases, user-confirmed Supervisor approval/finalization, exclusive Supervisor Known Reference management, shared read-only Operator History, official logo/signature PDF.
 - [Field & Screen Specification v0.2](field-and-screen-specification-v0.2.md) — preceding UX revision, retained for audit.
