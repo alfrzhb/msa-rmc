@@ -1,7 +1,7 @@
 # Decision Log — RMC MSA Analysis Tool
 
 **Document status:** DRAFT / LIVE REGISTER  
-**Last reviewed:** 23 October 2026 (Field & Screen revision v0.2)  
+**Last reviewed:** 23 October 2026 (Field & Screen decisions v0.3)  
 **Basis:** Requirements Analysis v0.3 and stakeholder feedback
 
 This log distinguishes an item accepted in a requirements review from a full, formally `FROZEN` specification.
@@ -36,6 +36,10 @@ This log distinguishes an item accepted in a requirements review from a full, fo
 | DEC-024 | Distinguish appraiser identity from logged-in data-entry identity; preserve per-cell audit attribution | Inspection performer and system editor are not necessarily the same person | Recommended workflow |
 | DEC-025 | Apply Ratama/AIAG-aligned study collection guidance and applicable customer-specific MSA requirements | Standards-based design is not customer signoff | Accepted principle; client protocol validation open |
 | DEC-026 | Attribute uses Standard Preset + Configurable Approved Policy: fixed validated formulas, Ratama-derived default judgment bands, versioned Supervisor-managed acceptance criteria requiring Quality approval | Keeps operator UX simple without inventing universal NG-miss/false-reject limits or altering historic results | User agreed to product design; domain thresholds NOT FROZEN |
+| DEC-027 | Only Supervisor can Approve & Finalize studies; Operator may calculate, save and submit for approval | Single-level Supervisor sign-off, no manager hierarchy | Product-owner accepted for MVP design; NOT FROZEN |
+| DEC-028 | Only Supervisor can create, edit and verify Attribute Known Reference | Prevent uncontrolled alteration and leakage during blind assessment | Product-owner accepted for MVP design; NOT FROZEN |
+| DEC-029 | Operators can view all study History; only modify own Drafts, and finalized studies from others are read-only | Shared visibility with owner-based write access | Product-owner accepted for MVP design; NOT FROZEN |
+| DEC-030 | Official Final PDF includes company logo and Supervisor approval/signature section | Approval record, identity, timestamp and authorized signature asset; branding assets to follow | Product-owner accepted for MVP design; asset/style/legal details OPEN |
 
 ## Open decisions (DISCUSSION REQUIRED)
 
@@ -45,13 +49,21 @@ This log distinguishes an item accepted in a requirements review from a full, fo
 | OPEN-002 | Flexible vs locked part/appraiser/trial counts | Workbook configurations are initial presets; alternatives need verified constants, protocol and acceptance tests |
 | OPEN-003 | Calculation version and final signoff | Source data outputs independently audited; test vectors in calculation documents; raw XLSX formula-cell scan and acceptance pending |
 | OPEN-004 | Judgment, threshold boundary and %Tolerance policy | User accepts Ratama-based bands and Review Required for conflicts; customer-specific acceptance/composite policy signoff still required |
-| OPEN-005 | Can Operators view all studies or only their own? | Pending |
-| OPEN-006 | Exact Admin and Supervisor permissions, including deletion and revision | Field & Screen v0.2 proposes Operator Submit for Review and **Supervisor-only Finalize** (conservative interim default); Ratama approval still required |
-| OPEN-007 | Finalize and revision lifecycle details | v0.2 proposes Submit for Review as flag on Draft, Supervisor Finalize of clean/current results, revisions remain immutable; exception dispositions need Ratama approval |
-| OPEN-008 | Dashboard fields, detailed PDF format, branding | Proposed, not FROZEN |
+| OPEN-006 | Other Admin and Supervisor permission details | **Supervisor-only Approve & Finalize accepted**; known reference write/verify Supervisor-only; deletion/revision safeguards still need implementation review |
+| OPEN-007 | Exceptional disposition and approval lifecycle details | Supervisor Approve & Finalize accepted; signed reports for approved studies, immutable prior revisions; treatment of NG, missing policy or critical warnings still needs Quality-approved rules |
+| OPEN-008 | Detailed PDF design and approval assets | Logo and Supervisor signature/approval block accepted; actual logo/signature assets, signatory title, layout, appendix and any e-signature compliance remain pending |
 | OPEN-009 | Technology stack, hosting, backup and security implementation | Decide after requirements and calculations |
 | OPEN-010 | Attribute numerical missed-NG / false-reject limits and whole-study verdict | Standard preset + versioned configurable APPROVED policy agreed as design; actual limits/customer approval and global verdict remain open |
 | OPEN-011 | Low-end NDC convention domain check | Design uses Ratama literal floor(NDCraw) when GRR>0; no Minitab minimum-1 parity claim; Ratama reviewer confirmation pending |
+
+## Product-owner approval/visibility decisions — 2026-10-23
+
+- [Field & Screen Specification v0.3](../04-ui-ux/field-and-screen-specification-v0.3.md) records four accepted product decisions, **NOT FROZEN**.
+- **DEC-027:** Supervisor alone can approve and finalize. Operator can calculate, save, and submit; approval recorded atomically with Finalize (one approval tier).
+- **DEC-028:** Supervisor alone may manage/modify/verify the 50 Attribute Known Reference values; blind appraiser views are still shielded.
+- **DEC-029:** Operators can view **all study history**, but may edit only their own Drafts. Other Draft source/reference data remain protected while blind studies are in progress; finalized reports are read-only for other Operators.
+- **DEC-030:** A Final PDF must show approved company logo and Supervisor signature/approval provenance; do not fake missing signature assets or mislabel a pasted image as a certified digital signature.
+- **Open:** Approval of risk thresholds/exception policy by Ratama Quality; real logo and signature assets; signature method/legal sufficiency; branded report layout; UAT and all-purpose specification freeze.
 
 ## Attribute Policy Agreement — 2026-10-23
 

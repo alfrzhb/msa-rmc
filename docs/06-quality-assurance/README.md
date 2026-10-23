@@ -14,3 +14,7 @@ Do not publish raw client workbooks, appraiser identities or confidential study 
 ## Screen & field UX review
 
 - [Field & Screen Specification v0.2](../04-ui-ux/field-and-screen-specification-v0.2.md) — 25 nonexecuted UI acceptance checks (UI-01 through UI-25) for progressive disclosure, edit permissions, separate blind reference, Supervisor review/finalization, results-first display, revision history and report snapshots.
+
+## Field & Screen v0.3 product-owner decision tests
+
+- [Field & Screen Specification v0.3](../04-ui-ux/field-and-screen-specification-v0.3.md) extends the UX review matrix to UI-35: Operator all-history read-only rules, Supervisor-only Attribute Known Reference management, explicit Approve & Finalize with actor/time, signed-logo PDF without invented assets, and refusal to certify a study under unapproved Quality rules. Tests are **specified, not yet implemented or run**.

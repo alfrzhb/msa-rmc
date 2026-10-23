@@ -1,6 +1,6 @@
 # RMC MSA Analysis Tool
 
-**Status:** Field & Screen Specification v0.2 revised for review — DRAFT / NOT FROZEN
+**Status:** Field & Screen Specification v0.3 updated with role/approval decisions — DRAFT / NOT FROZEN
 
 A lightweight, web-based Measurement System Analysis (MSA) application for an initial single-company client of PT Ratama Mitra Kualitas. This repository starts with requirements and documentation; implementation and technology choices are not finalized.
 
@@ -18,7 +18,7 @@ Help authorized employees create Variable or Attribute MSA studies, enter measur
 
 ## Documentation
 
-- [Field & Screen Specification v0.2](docs/04-ui-ux/field-and-screen-specification-v0.2.md): simplified setup, supervisor review/finalize proposal, restricted Attribute references, results-first hierarchy, 25 UX checks. [v0.1 archive](docs/04-ui-ux/field-and-screen-specification-v0.1.md).
+- [Field & Screen Specification v0.3](docs/04-ui-ux/field-and-screen-specification-v0.3.md): confirmed Supervisor approval/finalization and Attribute reference management; Operator all-history view; final PDF logo and authorized signature block; 35 UX checks. [v0.2 archive](docs/04-ui-ux/field-and-screen-specification-v0.2.md).
 
 Start at [Documentation Index](docs/README.md), then read the current [Requirements Analysis v0.3](docs/01-discovery/requirements-analysis-v0.3.md), [Calculation Source Audit](docs/03-calculations/ratama-source-audit-v0.1.md), the [Variable Calculation Draft](docs/03-calculations/variable-msa-calculation-spec-v0.1.md), the [Attribute Audit](docs/03-calculations/attribute-msa-audit-v0.1.md), the [Calculation QA Plan](docs/06-quality-assurance/calculation-test-plan-v0.1.md), and the [Decision Log](docs/decisions/decision-log.md).
 
