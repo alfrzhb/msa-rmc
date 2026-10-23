@@ -1,19 +1,16 @@
-# UI / UX Design
+# UI and UX Documentation
 
-**Status:** DRAFT — NOT FROZEN
+Status: DRAFT, not frozen.
 
-## Draft workflow
+## Main documents
 
-- [Attribute Study Input Workflow v0.1](attribute-study-input-flow-v0.1.md) — one digital study with three appraiser sections, regardless of one combined paper or three separate sheets. Single authorized owner/Supervisor enters all appraiser outcomes in the first MVP; future per-appraiser collaboration requires additional permissions.
+- [Field and Screen Specification v0.1](field-and-screen-specification-v0.1.md) - Screens, fields, forms, result pages, permissions, validation, reporting, and test scenarios.
+- [Attribute Study Input Workflow v0.1](attribute-study-input-flow-v0.1.md) - One study with three appraiser sections.
 
-## Planned user journeys
+## Navigation
 
-1. Login and dashboard.
-2. MSA history and Create New MSA.
-3. Variable/Attribute type selection and study metadata.
-4. Appraiser-specific data entry, validation and Save Draft.
-5. Calculate, per-appraiser interpretation, Finalize, PDF and revision.
+Login to Dashboard to MSA History / New MSA to Setup to Appraisers to Data Input to Results to Report.
 
-Operator input must be straightforward; the UI must not expose reference OK/NG answers to appraisers who are still performing blind inspection.
+Pending domain review: known-reference entry permissions, finalization rules, operator visibility, report branding, policy approval.
 
-Any future collaborative editing of studies requires an explicit permission and audit design; current Operator ownership restrictions remain in force.
+No implementation has started.

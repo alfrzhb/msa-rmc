@@ -39,3 +39,7 @@
 ## Source materials
 
 Legacy Ratama Excel workbooks and prior v1.0/v1.1 drafts are **reference inputs**, not governing specifications for this rebuild. Do not assume their formulas are automatically valid. Never upload confidential client data to this public repository.
+
+## Field and screen review
+
+- [Field and Screen Specification v0.1](04-ui-ux/field-and-screen-specification-v0.1.md) - new review draft for all MVP screens, fields, permissions, validations, report and acceptance scenarios.

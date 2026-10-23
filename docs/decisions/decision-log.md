@@ -1,7 +1,7 @@
 # Decision Log — RMC MSA Analysis Tool
 
 **Document status:** DRAFT / LIVE REGISTER  
-**Last reviewed:** 23 October 2026 (Attribute Judgment Policy v0.1)  
+**Last reviewed:** 23 October 2026 (Field & Screen Draft v0.1)  
 **Basis:** Requirements Analysis v0.3 and stakeholder feedback
 
 This log distinguishes an item accepted in a requirements review from a full, formally `FROZEN` specification.
@@ -86,3 +86,10 @@ This log distinguishes an item accepted in a requirements review from a full, fo
 4. Preserve the previous version in Git history; never silently rewrite a frozen baseline.
 
 No documents in this repository are currently FROZEN.
+
+## Field and Screen Draft Log — 2026-10-23
+
+- [Field and Screen Specification v0.1](../04-ui-ux/field-and-screen-specification-v0.1.md) created using the current Ratama workbook templates, requirements, calculation decisions, and historical screen specification.
+- Includes 13 screen types, a shared field dictionary, three appraiser tabs per MSA, roles, status transitions, policy selection, PDF contents and screen acceptance checks.
+- This is a DRAFT review document, not a newly approved or frozen baseline.
+- Pending: Attribute reference-entry authorization; operator Finalize rule; operator history visibility; PDF branding, and Ratama Quality acceptance thresholds.
