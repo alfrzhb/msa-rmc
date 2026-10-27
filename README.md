@@ -1,6 +1,6 @@
 # RMC MSA Analysis Tool
 
-**Status:** Field & Screen Specification v0.3 updated with role/approval decisions — DRAFT / NOT FROZEN
+**Status:** System Architecture v0.1 proposed for review; responsive wireframe accepted; visual polish and Quality criteria pending — DRAFT / NOT FROZEN
 
 A lightweight, web-based Measurement System Analysis (MSA) application for an initial single-company client of PT Ratama Mitra Kualitas. This repository starts with requirements and documentation; implementation and technology choices are not finalized.
 
@@ -15,6 +15,13 @@ Help authorized employees create Variable or Attribute MSA studies, enter measur
 - **Calculation direction:** Variable Average & Range with the Ratama 10×3×3 preset; Attribute Kappa vs Reference under review using the Ratama 50×3×2 workbook.
 - **Calculation review:** [Final Calculation Review v0.2](docs/03-calculations/final-calculation-review-v0.2.md) documents cross-method differences, corrected test vectors and approval gates.
 - **Pending validation:** Customer acceptance criteria, pooled Attribute Kappa methodology, review and freeze gates, study assumptions, alternative study sizes.
+
+## Proposed technical architecture (review only)
+
+The recommended single-client MVP stack is **React + Vite + TypeScript, Hono on Cloudflare Workers (SPA static assets), D1/SQLite, Cloudflare Access email OTP, and private R2 for final PDF/brand assets**. The calculation engine remains an independently tested pure TypeScript module. Supervisor alone approves and finalizes; PDF and policy snapshots must remain immutable.
+
+- [System Architecture Design v0.1](docs/05-architecture/system-architecture-v0.1.md) — relational entities, RBAC, API, audit, versioned calculations, approval/PDF sequencing and deployment.
+- **OPEN:** This is a recommended design, not an accepted architecture or a production implementation. Quality criteria, true signature assets, Cloudflare Access login reconciliation and technical proof-of-concept checks are pending.
 
 ## Documentation
 

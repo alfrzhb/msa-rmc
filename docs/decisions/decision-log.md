@@ -149,3 +149,12 @@ No documents in this repository are currently FROZEN.
 - **Candidate only, not signed off:** off-white `#F8F9FA`, charcoal `#24292F`, muted steel blue `#456A81`; Inter or IBM Plex Sans. Ratama brand/logo assets have not been supplied.
 - [High-Fidelity UI Design Review v0.1](../04-ui-ux/high-fidelity-design-review-v0.1.md) now includes the review and visual polish acceptance gate. Do not claim the prototype itself has been recolored.
 - **Scope boundary:** No new acceptance of statistical formulas, Quality thresholds, role-policy implementation, production code or FROZEN document state.
+
+
+## System Architecture candidate — 2026-10-28 (PROPOSED, NOT DECIDED)
+
+- [System Architecture Design v0.1](../05-architecture/system-architecture-v0.1.md) recommends **React/Vite/TypeScript + Hono on one Cloudflare Worker + D1 + private R2 + Cloudflare Access OTP + Browser Run PDF**, as a **modular monolith** suitable for a single Ratama client.
+- Proposal covers separate pure calculation module, per-study revision/source table model, server-enforced RBAC, Supervisor-only Known Reference/approval, immutable approved reports, and preview/staging/production isolation.
+- **Technical review required:** S01 screen currently implies local email/password but proposed Access uses hosted OTP. App Admin roles and Access identity allowlisting require coordinated onboarding.
+- D1/R2 finalize is not a distributed transaction: planned safe staged PDF + version-guarded D1 commit must be proven in implementation. Customer Quality criteria and electronic-signature/retention obligations remain open.
+- **No approved architecture decision ID assigned yet**: user requested a recommended stack, not approval to freeze or start coding. No application code or cloud resources created.

@@ -1,7 +1,7 @@
 # Documentation Index
 
 **Project:** RMC MSA Analysis Tool  
-**Current phase:** High-Fidelity UI v0.1 concept provisionally accepted, palette revision outstanding (DEC-032); Responsive Wireframe v0.2 approved baseline — overall DRAFT  
+**Current phase:** System Architecture v0.1 stack recommended for review; high-fidelity visual polish and Quality criteria pending — overall DRAFT / NOT FROZEN  
 **Document baseline:** v0.3 — DRAFT / NOT FROZEN
 
 ## Directory map
@@ -12,13 +12,14 @@
 | [02-requirements](02-requirements/README.md) | Detailed functional and non-functional requirements | Pending |
 | [03-calculations](03-calculations/README.md) | Final Calculation Review v0.2, source audit, Variable formulas and Attribute candidates | REVIEW DRAFT |
 | [04-ui-ux](04-ui-ux/README.md) | Field & Screen v0.3, Wireframe Review v0.1, approval/role workflow and signed-PDF placeholders | REVIEW DRAFT |
-| [05-architecture](05-architecture/README.md) | Data model, API, authentication, infrastructure | Pending |
+| [05-architecture](05-architecture/README.md) | System Architecture v0.1: proposed stack, DB model, auth/RBAC, reports and deployment | REVIEW DRAFT |
 | [06-quality-assurance](06-quality-assurance/README.md) | Calculation regression plan and v0.2 method-comparison cases | DRAFT / pending implementation |
 | [decisions](decisions/decision-log.md) | Decision register, approvals, outstanding questions | Active |
 
 ## Reading order
 
 1. [Requirements Analysis v0.3 — DRAFT](01-discovery/requirements-analysis-v0.3.md)
+   - [System Architecture v0.1 — proposed DRAFT](05-architecture/system-architecture-v0.1.md)
 2. [Decision Log](decisions/decision-log.md)
 3. [Final Calculation Review v0.2](03-calculations/final-calculation-review-v0.2.md)
 4. [Ratama source audit v0.1](03-calculations/ratama-source-audit-v0.1.md)
