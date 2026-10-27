@@ -4,6 +4,8 @@
 
 ## Wireframe review
 
+- [Responsive Wireframe Review v0.2](wireframe-responsive-review-v0.2.md) — responsive mobile/desktop input patterns, viewport QA sweep and UX review checklist; standalone HTML and screenshots delivered in conversation.
+
 - [Wireframe Review v0.1](wireframe-review-v0.1.md) — 13-screen coverage, low-fidelity navigation and UI checklist. Standalone HTML and screenshots were supplied in the project conversation; not stored as production code in this repository.
 
 ## Specifications

@@ -1,7 +1,7 @@
 # Documentation Index
 
 **Project:** RMC MSA Analysis Tool  
-**Current phase:** Field & Screen v0.3 accepted role/approval direction — DRAFT / NOT FROZEN  
+**Current phase:** Responsive Wireframe v0.2 under review — DRAFT / NOT FROZEN  
 **Document baseline:** v0.3 — DRAFT / NOT FROZEN
 
 ## Directory map
@@ -27,12 +27,13 @@
 7. [Calculation QA plan v0.1](06-quality-assurance/calculation-test-plan-v0.1.md)
 8. [Calculation review regression addendum v0.2](06-quality-assurance/calculation-review-test-matrix-v0.2.md)
 9. [Calculation Decisions v0.3](03-calculations/calculation-decision-review-v0.3.md)
-10. [Wireframe Review v0.1 — DRAFT](04-ui-ux/wireframe-review-v0.1.md)
-11. [Field & Screen Specification v0.3 — current DRAFT](04-ui-ux/field-and-screen-specification-v0.3.md)
-12. [Field & Screen Specification v0.2 — archived DRAFT](04-ui-ux/field-and-screen-specification-v0.2.md)
-13. [Field & Screen Specification v0.1 — archived DRAFT](04-ui-ux/field-and-screen-specification-v0.1.md)
-14. [Attribute Study Input Workflow v0.1](04-ui-ux/attribute-study-input-flow-v0.1.md)
-15. Freeze only after the remaining approval gates pass.
+10. [Responsive Wireframe Review v0.2 — DRAFT](04-ui-ux/wireframe-responsive-review-v0.2.md)
+11. [Wireframe Review v0.1 — DRAFT](04-ui-ux/wireframe-review-v0.1.md)
+12. [Field & Screen Specification v0.3 — current DRAFT](04-ui-ux/field-and-screen-specification-v0.3.md)
+13. [Field & Screen Specification v0.2 — archived DRAFT](04-ui-ux/field-and-screen-specification-v0.2.md)
+14. [Field & Screen Specification v0.1 — archived DRAFT](04-ui-ux/field-and-screen-specification-v0.1.md)
+15. [Attribute Study Input Workflow v0.1](04-ui-ux/attribute-study-input-flow-v0.1.md)
+16. Freeze only after the remaining approval gates pass.
 
 ## Approval rules
 

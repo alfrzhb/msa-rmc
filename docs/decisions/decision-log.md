@@ -118,3 +118,9 @@ No documents in this repository are currently FROZEN.
 - [Wireframe Review v0.1](../04-ui-ux/wireframe-review-v0.1.md) records the 13-screen low-fidelity prototype, interaction matrix, browser/screenshot review and UX checkpoints. The interactive standalone HTML and screenshots were delivered in conversation, **not pushed as application source to GitHub**.
 - This is a design artifact only; no statistical engine, real login, backend approval or production PDF exists.
 - Approval/visibility decisions remain those in DEC-027 to DEC-030. The wireframe does not change or FROZEN-approve any calculations or customer Quality limits.
+
+## Responsive Wireframe v0.2 review — 2026-10-28
+
+- [Responsive Wireframe Review v0.2](../04-ui-ux/wireframe-responsive-review-v0.2.md) documents responsive desktop/tablet/mobile UI arrangements, focused per-part/per-sample mobile entry, bottom navigation, mobile History cards, and role-based approval/reference simulation.
+- Browser QA of the standalone prototype covered 8 widths × 3 roles × 15 page states with **zero document horizontal overflows and zero JavaScript errors**. Simulated interactions were checked separately.
+- HTML, screenshot and ZIP deliverables were provided in the conversation, **not committed as production source**. Do not interpret this UI review as customer signoff, frozen MSA acceptance policy or application implementation.
