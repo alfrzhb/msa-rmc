@@ -132,3 +132,9 @@ No documents in this repository are currently FROZEN.
 - Accepted pattern: desktop full input tables; mobile focused part/sample entry; responsive dashboard, History cards, results, and Supervisor approval flow.
 - [Responsive Wireframe Review v0.2](../04-ui-ux/wireframe-responsive-review-v0.2.md) now records this scope-limited sign-off.
 - Explicitly **not** approved by this UX decision: calculation-engine formulas, customer Quality judgement limits/exception policy, actual PDF signature assets, production security, test/UAT results or entire requirements freeze.
+
+## High-fidelity visual design proposed — 2026-10-28
+
+- [High-Fidelity UI Design Review v0.1](../04-ui-ux/high-fidelity-design-review-v0.1.md) proposes **Industrial Workspace** visual language, Teal/Navy palette, more legible mobile results and responsive app components atop the **already-approved** Responsive Wireframe v0.2.
+- Standalone interactive prototype/screenshots delivered in conversation; **360 viewport × role × screen render cases passed with no global overflow or JavaScript page errors**.
+- **Proposal only:** Product owner has not yet accepted high-fidelity visual details. Do **not** add an accepted DEC number or mark FROZEN at this stage. Domain calculations and Quality/customer policy remain separate pending validation.

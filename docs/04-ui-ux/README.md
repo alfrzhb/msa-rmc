@@ -2,6 +2,10 @@
 
 **Current:** [Field & Screen Specification v0.3](field-and-screen-specification-v0.3.md) — **DRAFT, NOT FROZEN** (2026-10-23)
 
+## High-fidelity design (pending product-owner review)
+
+- [High-Fidelity UI Design Review v0.1](high-fidelity-design-review-v0.1.md) — proposed Industrial Workspace visual system, desktop/mobile styling, Attribute appraiser risk cards and browser QA. **DRAFT, not yet approved.** Standalone HTML and PNG previews were delivered in conversation.
+
 ## Wireframe review
 
 - [Responsive Wireframe Review v0.2](wireframe-responsive-review-v0.2.md) — **product-owner UI/UX direction approved 28 Oct 2026 (DEC-031)**; responsive mobile/desktop patterns and prototype QA. This does not freeze statistical methods or application requirements.

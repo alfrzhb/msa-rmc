@@ -1,7 +1,7 @@
 # Documentation Index
 
 **Project:** RMC MSA Analysis Tool  
-**Current phase:** Responsive Wireframe v0.2 UI/UX direction approved — overall documentation DRAFT / NOT FROZEN  
+**Current phase:** High-Fidelity UI v0.1 proposal ready for review; Responsive Wireframe v0.2 remains approved baseline — overall DRAFT  
 **Document baseline:** v0.3 — DRAFT / NOT FROZEN
 
 ## Directory map
@@ -27,13 +27,14 @@
 7. [Calculation QA plan v0.1](06-quality-assurance/calculation-test-plan-v0.1.md)
 8. [Calculation review regression addendum v0.2](06-quality-assurance/calculation-review-test-matrix-v0.2.md)
 9. [Calculation Decisions v0.3](03-calculations/calculation-decision-review-v0.3.md)
-10. [Responsive Wireframe Review v0.2 — DRAFT](04-ui-ux/wireframe-responsive-review-v0.2.md)
-11. [Wireframe Review v0.1 — DRAFT](04-ui-ux/wireframe-review-v0.1.md)
-12. [Field & Screen Specification v0.3 — current DRAFT](04-ui-ux/field-and-screen-specification-v0.3.md)
-13. [Field & Screen Specification v0.2 — archived DRAFT](04-ui-ux/field-and-screen-specification-v0.2.md)
-14. [Field & Screen Specification v0.1 — archived DRAFT](04-ui-ux/field-and-screen-specification-v0.1.md)
-15. [Attribute Study Input Workflow v0.1](04-ui-ux/attribute-study-input-flow-v0.1.md)
-16. Freeze only after the remaining approval gates pass.
+10. [High-Fidelity UI Design Review v0.1 — proposed DRAFT](04-ui-ux/high-fidelity-design-review-v0.1.md)
+11. [Responsive Wireframe Review v0.2 — approved UX direction](04-ui-ux/wireframe-responsive-review-v0.2.md)
+12. [Wireframe Review v0.1 — DRAFT](04-ui-ux/wireframe-review-v0.1.md)
+13. [Field & Screen Specification v0.3 — current DRAFT](04-ui-ux/field-and-screen-specification-v0.3.md)
+14. [Field & Screen Specification v0.2 — archived DRAFT](04-ui-ux/field-and-screen-specification-v0.2.md)
+15. [Field & Screen Specification v0.1 — archived DRAFT](04-ui-ux/field-and-screen-specification-v0.1.md)
+16. [Attribute Study Input Workflow v0.1](04-ui-ux/attribute-study-input-flow-v0.1.md)
+17. Freeze only after the remaining approval gates pass.
 
 ## Approval rules
 
