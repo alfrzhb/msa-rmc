@@ -1,8 +1,12 @@
 # RMC MSA — Responsive Wireframe Review v0.2
 
-**Status:** DRAFT / UI–UX REVIEW; NOT FROZEN  
+**Status:** PRODUCT-OWNER UX DIRECTION APPROVED (28 October 2026); ARTIFACT STILL DRAFT / NOT FROZEN  
 **Date:** 28 October 2026  
 **Based on:** [Field & Screen Specification v0.3](field-and-screen-specification-v0.3.md), [Wireframe Review v0.1](wireframe-review-v0.1.md), DEC-027..030.
+
+## Acceptance decision
+
+On **28 October 2026**, the product owner explicitly accepted Responsive Wireframe v0.2 as the **UI/UX design direction**. This sign-off covers responsive layouts and intended interaction patterns, not approval of statistical methods, production readiness, real signatures, live role enforcement or the complete specification. See [DEC-031](../decisions/decision-log.md).
 
 ## Intent
 
@@ -46,4 +50,4 @@ The HTML prototype, responsive overview PNG, and ZIP of selected screenshots wer
 - Approve final logo/signature assets and the report's printable layout.
 - Ratama Quality must separately approve customer-specific acceptance criteria and exceptional dispositions.
 
-**Status stays DRAFT / NOT FROZEN. No production code or MSA formula was changed.**
+**Product-owner UI/UX direction accepted; documentation remains DRAFT / NOT FROZEN. No production code or MSA formula was changed.**

@@ -1,7 +1,7 @@
 # Decision Log — RMC MSA Analysis Tool
 
 **Document status:** DRAFT / LIVE REGISTER  
-**Last reviewed:** 23 October 2026 (Field & Screen decisions v0.3)  
+**Last reviewed:** 28 October 2026 (responsive wireframe UX approval)  
 **Basis:** Requirements Analysis v0.3 and stakeholder feedback
 
 This log distinguishes an item accepted in a requirements review from a full, formally `FROZEN` specification.
@@ -40,6 +40,7 @@ This log distinguishes an item accepted in a requirements review from a full, fo
 | DEC-028 | Only Supervisor can create, edit and verify Attribute Known Reference | Prevent uncontrolled alteration and leakage during blind assessment | Product-owner accepted for MVP design; NOT FROZEN |
 | DEC-029 | Operators can view all study History; only modify own Drafts, and finalized studies from others are read-only | Shared visibility with owner-based write access | Product-owner accepted for MVP design; NOT FROZEN |
 | DEC-030 | Official Final PDF includes company logo and Supervisor approval/signature section | Approval record, identity, timestamp and authorized signature asset; branding assets to follow | Product-owner accepted for MVP design; asset/style/legal details OPEN |
+| DEC-031 | Approve Responsive Wireframe v0.2 as the UI/UX design direction for desktop/tablet/mobile | Keep full desktop entry grids; mobile one-part/one-sample entry, compact navigation, card-based history; preserve role/approval flow | **Product-owner UX approval, 28 October 2026**; not statistical/Quality validation or entire project FROZEN |
 
 ## Open decisions (DISCUSSION REQUIRED)
 
@@ -124,3 +125,10 @@ No documents in this repository are currently FROZEN.
 - [Responsive Wireframe Review v0.2](../04-ui-ux/wireframe-responsive-review-v0.2.md) documents responsive desktop/tablet/mobile UI arrangements, focused per-part/per-sample mobile entry, bottom navigation, mobile History cards, and role-based approval/reference simulation.
 - Browser QA of the standalone prototype covered 8 widths × 3 roles × 15 page states with **zero document horizontal overflows and zero JavaScript errors**. Simulated interactions were checked separately.
 - HTML, screenshot and ZIP deliverables were provided in the conversation, **not committed as production source**. Do not interpret this UI review as customer signoff, frozen MSA acceptance policy or application implementation.
+
+## Responsive UI/UX sign-off — 2026-10-28
+
+- Product owner expressly **approved Responsive Wireframe v0.2** as the **UI/UX design baseline for the next visual design/implementation planning step** (DEC-031).
+- Accepted pattern: desktop full input tables; mobile focused part/sample entry; responsive dashboard, History cards, results, and Supervisor approval flow.
+- [Responsive Wireframe Review v0.2](../04-ui-ux/wireframe-responsive-review-v0.2.md) now records this scope-limited sign-off.
+- Explicitly **not** approved by this UX decision: calculation-engine formulas, customer Quality judgement limits/exception policy, actual PDF signature assets, production security, test/UAT results or entire requirements freeze.

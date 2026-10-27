@@ -1,7 +1,7 @@
 # Documentation Index
 
 **Project:** RMC MSA Analysis Tool  
-**Current phase:** Responsive Wireframe v0.2 under review — DRAFT / NOT FROZEN  
+**Current phase:** Responsive Wireframe v0.2 UI/UX direction approved — overall documentation DRAFT / NOT FROZEN  
 **Document baseline:** v0.3 — DRAFT / NOT FROZEN
 
 ## Directory map
