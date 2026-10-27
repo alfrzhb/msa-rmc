@@ -2,9 +2,9 @@
 
 **Current:** [Field & Screen Specification v0.3](field-and-screen-specification-v0.3.md) — **DRAFT, NOT FROZEN** (2026-10-23)
 
-## High-fidelity design (pending product-owner review)
+## High-fidelity design (concept accepted; palette revision required)
 
-- [High-Fidelity UI Design Review v0.1](high-fidelity-design-review-v0.1.md) — proposed Industrial Workspace visual system, desktop/mobile styling, Attribute appraiser risk cards and browser QA. **DRAFT, not yet approved.** Standalone HTML and PNG previews were delivered in conversation.
+- [High-Fidelity UI Design Review v0.1](high-fidelity-design-review-v0.1.md) — Industrial Workspace concept and responsive layout **provisionally accepted**; navy/teal palette criticized as generic/AI-styled and **requires visual polish** before final sign-off. See DEC-032. Still DRAFT. Standalone HTML and PNG previews were delivered in conversation.
 
 ## Wireframe review
 

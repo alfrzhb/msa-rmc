@@ -1,14 +1,44 @@
 # RMC MSA — High-Fidelity UI Design Review v0.1
 
-**Status:** PROPOSED VISUAL DESIGN / REVIEW DRAFT — NOT FROZEN  
+**Status:** CONCEPT ACCEPTED WITH VISUAL REVISIONS REQUIRED — DRAFT / NOT FROZEN  
 **Date:** 28 October 2026  
 **Based on:** [Approved Responsive Wireframe v0.2](wireframe-responsive-review-v0.2.md), [Field & Screen Specification v0.3](field-and-screen-specification-v0.3.md) and DEC-027 through DEC-031.
+
+## Product-owner review — 28 October 2026
+
+**Decision:** The product owner considers the overall high-fidelity layout and UX **sufficiently acceptable as a working direction**, with one explicit objection: the current navy/teal colors feel too much like a **generic AI-generated SaaS dashboard** ("AI slop"). This is **conditional acceptance of the design concept**, **not approval of the current color palette or final visual identity**.
+
+**Keep:**
+- Approved responsive information architecture (desktop tables, mobile per-part/per-sample input, History cards).
+- Usability-focused hierarchy, MSA results-first view, permissions, and Supervisor approval layout.
+- Minimal distraction and readable data presentation.
+
+**Required visual polish before final frontend styling:**
+1. Replace the saturated navy/teal-heavy appearance with a more restrained **enterprise/industrial engineering** character.
+2. Reduce unnecessary colored surfaces, glowing highlights, gradients and decorative shadows; favor subtle borders, white space and typographic hierarchy.
+3. Use color chiefly for **functional meaning** (primary action, focus, Approved, Pending, Warning, Error); do not confuse lifecycle approval with statistically acceptable MSA results.
+4. Review contrast, keyboard focus and status accessibility after changing colors; preserve desktop and mobile usability.
+5. Present the visual refresh for review as **v0.2** before considering visual design FROZEN.
+
+**Candidate visual tokens (suggested, NOT approved):**
+
+| Role | Proposed color | Use |
+| --- | --- | --- |
+| Canvas | `#F8F9FA` | Light neutral workspace |
+| Sidebar | `#24292F` | Charcoal, replacing blue/navy sidebar |
+| Primary | `#456A81` | Muted steel blue, replacing prominent teal |
+| Surface | `#FFFFFF` | Clean cards, grids, report |
+| Borders | Light neutral gray | Minimal separators, no heavy shadow |
+| Fonts | Inter or IBM Plex Sans | Readable enterprise UI |
+| Semantic statuses | Color on demand | Approval, pending, warnings and errors only |
+
+**Scope:** Documentation of stakeholder feedback; no HTML/CSS prototype redesign has been applied in this commit. The table of current v0.1 tokens below is retained **only as the as-reviewed prototype's historical baseline**.
 
 ## Recommendation
 
 Adopt **Industrial Workspace**, a professional engineering product language, rather than a visually busy consumer SaaS dashboard. The visual design must increase readability and input accuracy and must not change MSA methodological assumptions.
 
-### Design tokens
+### Design tokens of the reviewed v0.1 prototype (not final)
 
 | Purpose | Token | Use |
 | --- | --- | --- |
@@ -53,9 +83,10 @@ These are **prototype smoke checks**, not production QA, actual role-permission 
 
 ## Approval gates
 
-- [ ] Product owner reviews and approves visual identity, typography, input usability and mobile risk cards
+- [x] Product owner provisionally accepts overall high-fidelity concept, layout and usability direction (with color criticism recorded)
+- [ ] Product owner reviews and approves revised color palette and final visual identity (visual polish v0.2)
 - [ ] Ratama provides real logo, signature and signatory information
 - [ ] Quality approves all customer-specific risk/disposition policies independently
 - [ ] Implement a real accessible frontend, backend authorization, calculation regression suite and secure approval/PDF workflow only after technical planning
 
-**No new design approval is assumed by creating this draft.** The last approved UI/UX baseline remains Responsive Wireframe v0.2, DEC-031. Entire requirements and statistical criteria are NOT FROZEN.
+**Current review status:** High-fidelity v0.1 **conditionally accepted as a concept only**; its visual palette is **not final**. The previously approved responsive UX baseline remains Wireframe v0.2 (DEC-031). Entire requirements and statistical criteria are NOT FROZEN.

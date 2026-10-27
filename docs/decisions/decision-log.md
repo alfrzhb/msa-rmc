@@ -1,7 +1,7 @@
 # Decision Log — RMC MSA Analysis Tool
 
 **Document status:** DRAFT / LIVE REGISTER  
-**Last reviewed:** 28 October 2026 (responsive wireframe UX approval)  
+**Last reviewed:** 28 October 2026 (high-fidelity concept accepted with color revisions)  
 **Basis:** Requirements Analysis v0.3 and stakeholder feedback
 
 This log distinguishes an item accepted in a requirements review from a full, formally `FROZEN` specification.
@@ -41,6 +41,7 @@ This log distinguishes an item accepted in a requirements review from a full, fo
 | DEC-029 | Operators can view all study History; only modify own Drafts, and finalized studies from others are read-only | Shared visibility with owner-based write access | Product-owner accepted for MVP design; NOT FROZEN |
 | DEC-030 | Official Final PDF includes company logo and Supervisor approval/signature section | Approval record, identity, timestamp and authorized signature asset; branding assets to follow | Product-owner accepted for MVP design; asset/style/legal details OPEN |
 | DEC-031 | Approve Responsive Wireframe v0.2 as the UI/UX design direction for desktop/tablet/mobile | Keep full desktop entry grids; mobile one-part/one-sample entry, compact navigation, card-based history; preserve role/approval flow | **Product-owner UX approval, 28 October 2026**; not statistical/Quality validation or entire project FROZEN |
+| DEC-032 | High-Fidelity UI v0.1 accepted as a general layout/UX direction, **subject to visual refinement**: navy/teal color palette feels too generic/AI-styled | Preserve approved mobile/desktop patterns and usability; require restrained industrial styling, fewer decorative effects and accessible semantic colors before final visual approval | Product-owner qualitative feedback, 28 Oct 2026; **palette NOT approved**, entire spec NOT FROZEN |
 
 ## Open decisions (DISCUSSION REQUIRED)
 
@@ -138,3 +139,13 @@ No documents in this repository are currently FROZEN.
 - [High-Fidelity UI Design Review v0.1](../04-ui-ux/high-fidelity-design-review-v0.1.md) proposes **Industrial Workspace** visual language, Teal/Navy palette, more legible mobile results and responsive app components atop the **already-approved** Responsive Wireframe v0.2.
 - Standalone interactive prototype/screenshots delivered in conversation; **360 viewport × role × screen render cases passed with no global overflow or JavaScript page errors**.
 - **Proposal only:** Product owner has not yet accepted high-fidelity visual details. Do **not** add an accepted DEC number or mark FROZEN at this stage. Domain calculations and Quality/customer policy remain separate pending validation.
+
+
+## High-fidelity visual feedback — 2026-10-28 (DEC-032)
+
+- The product owner said High-Fidelity UI v0.1 is broadly acceptable, but **the navy/teal coloring feels like a generic AI-generated dashboard**.
+- **Accepted provisionally:** layout, responsive UX flow, data-centric industrial workspace direction.
+- **Not accepted/finalized:** current color palette and full visual identity. Next visual pass should replace navy/teal-heavy surfaces with a muted, restrained enterprise/industrial direction; avoid gradients, excess shadows and decoration; use accessible semantic status colors.
+- **Candidate only, not signed off:** off-white `#F8F9FA`, charcoal `#24292F`, muted steel blue `#456A81`; Inter or IBM Plex Sans. Ratama brand/logo assets have not been supplied.
+- [High-Fidelity UI Design Review v0.1](../04-ui-ux/high-fidelity-design-review-v0.1.md) now includes the review and visual polish acceptance gate. Do not claim the prototype itself has been recolored.
+- **Scope boundary:** No new acceptance of statistical formulas, Quality thresholds, role-policy implementation, production code or FROZEN document state.

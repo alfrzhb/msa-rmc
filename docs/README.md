@@ -1,7 +1,7 @@
 # Documentation Index
 
 **Project:** RMC MSA Analysis Tool  
-**Current phase:** High-Fidelity UI v0.1 proposal ready for review; Responsive Wireframe v0.2 remains approved baseline — overall DRAFT  
+**Current phase:** High-Fidelity UI v0.1 concept provisionally accepted, palette revision outstanding (DEC-032); Responsive Wireframe v0.2 approved baseline — overall DRAFT  
 **Document baseline:** v0.3 — DRAFT / NOT FROZEN
 
 ## Directory map
@@ -27,7 +27,7 @@
 7. [Calculation QA plan v0.1](06-quality-assurance/calculation-test-plan-v0.1.md)
 8. [Calculation review regression addendum v0.2](06-quality-assurance/calculation-review-test-matrix-v0.2.md)
 9. [Calculation Decisions v0.3](03-calculations/calculation-decision-review-v0.3.md)
-10. [High-Fidelity UI Design Review v0.1 — proposed DRAFT](04-ui-ux/high-fidelity-design-review-v0.1.md)
+10. [High-Fidelity UI Design Review v0.1 — concept accepted, visual revision pending](04-ui-ux/high-fidelity-design-review-v0.1.md)
 11. [Responsive Wireframe Review v0.2 — approved UX direction](04-ui-ux/wireframe-responsive-review-v0.2.md)
 12. [Wireframe Review v0.1 — DRAFT](04-ui-ux/wireframe-review-v0.1.md)
 13. [Field & Screen Specification v0.3 — current DRAFT](04-ui-ux/field-and-screen-specification-v0.3.md)
