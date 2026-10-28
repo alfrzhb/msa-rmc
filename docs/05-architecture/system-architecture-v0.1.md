@@ -1,8 +1,10 @@
 # RMC MSA — System Architecture Design v0.1
 
-**Status:** PROPOSED / TECHNICAL REVIEW — DRAFT, NOT FROZEN  
+**Status:** TECHNOLOGY STACK SELECTED (DEC-033); ARCHITECTURE DETAILS UNDER TECHNICAL REVIEW — DRAFT / NOT FROZEN  
 **Date:** 28 October 2026  
 **Scope:** Single-client MVP; design and decision preparation only, **no application implementation**.
+
+**Stack decision:** [Tech Stack Decision v1.0](tech-stack-decision-v1.0.md) is now **product-owner accepted** (DEC-033). The selected services/frameworks in this document are no longer merely a hosting proposal; **database schema, API contracts, Access login reconciliation, PDF renderer feasibility, infrastructure details, statistical policies and release gates remain DRAFT**.
 
 ## 1. Recommendation
 
@@ -211,4 +213,4 @@ D1 is the **proposed default**, not a claim that SQLite is universally better. F
 | Golden calculation regression and reference blindness security | Critical mathematical and operational safety gates | **OPEN** |
 | Final high-fidelity visual polish | v0.1 UX accepted in concept, palette not accepted | **OPEN** |
 
-**Scope of this document:** one recommended technical baseline for stakeholder review. It does **not** record product-owner approval of the stack, change an already-agreed role rule, finalize Quality thresholds, or authorize implementation. Preserve DRAFT until acceptance is explicit.
+**Scope of this document:** Technology selection has been accepted in **DEC-033**, but the ERD, API contract, security implementation, PDF renderer, backups and calculation acceptance policies are still proposals requiring their own verification/review. The accepted stack does **not** authorize an untested production deployment. Preserve the detailed architecture as DRAFT until its review gates pass.

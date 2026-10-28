@@ -1,8 +1,8 @@
 # RMC MSA Analysis Tool
 
-**Status:** System Architecture v0.1 proposed for review; responsive wireframe accepted; visual polish and Quality criteria pending — DRAFT / NOT FROZEN
+**Status:** MVP technology stack selected (DEC-033); detailed architecture / Quality policy / visual polish remain DRAFT — NOT FROZEN
 
-A lightweight, web-based Measurement System Analysis (MSA) application for an initial single-company client of PT Ratama Mitra Kualitas. This repository starts with requirements and documentation; implementation and technology choices are not finalized.
+A lightweight, web-based Measurement System Analysis (MSA) application for an initial single-company client of PT Ratama Mitra Kualitas. This repository currently contains requirements and design documents. The MVP technology stack has been selected, but no product implementation or deployment has been completed.
 
 ## Purpose
 
@@ -16,12 +16,23 @@ Help authorized employees create Variable or Attribute MSA studies, enter measur
 - **Calculation review:** [Final Calculation Review v0.2](docs/03-calculations/final-calculation-review-v0.2.md) documents cross-method differences, corrected test vectors and approval gates.
 - **Pending validation:** Customer acceptance criteria, pooled Attribute Kappa methodology, review and freeze gates, study assumptions, alternative study sizes.
 
-## Proposed technical architecture (review only)
+## Selected MVP tech stack — DEC-033
 
-The recommended single-client MVP stack is **React + Vite + TypeScript, Hono on Cloudflare Workers (SPA static assets), D1/SQLite, Cloudflare Access email OTP, and private R2 for final PDF/brand assets**. The calculation engine remains an independently tested pure TypeScript module. Supervisor alone approves and finalizes; PDF and policy snapshots must remain immutable.
+| Layer | Selected |
+| --- | --- |
+| Frontend | React + Vite + TypeScript |
+| UI | Tailwind CSS + shadcn/ui |
+| API & hosting | Hono + Cloudflare Workers + Static Assets |
+| Database / ORM | **Cloudflare D1 (SQLite) + Drizzle ORM** |
+| Login / permissions | Cloudflare Access email OTP + server-side RBAC |
+| Private files | Cloudflare R2 |
+| PDF | HTML/CSS + Cloudflare Browser Run (**renderer PoC pending**) |
+| Validation / QA | Zod + Vitest + Playwright |
+| Deployment automation | GitHub Actions + Wrangler |
 
-- [System Architecture Design v0.1](docs/05-architecture/system-architecture-v0.1.md) — relational entities, RBAC, API, audit, versioned calculations, approval/PDF sequencing and deployment.
-- **OPEN:** This is a recommended design, not an accepted architecture or a production implementation. Quality criteria, true signature assets, Cloudflare Access login reconciliation and technical proof-of-concept checks are pending.
+- **[Tech Stack Decision v1.0 — selected baseline](docs/05-architecture/tech-stack-decision-v1.0.md)** — source of truth for technology selection, why Cloudflare/D1 instead of Hostinger/PostgreSQL, and outstanding verification.
+- [System Architecture Design v0.1](docs/05-architecture/system-architecture-v0.1.md) — **DRAFT** relational schema, RBAC, API, audit, versioned calculation, concurrency-safe approval/PDF sequencing.
+- **OPEN (not tech selection):** Customer Quality criteria, actual signature assets, Access OTP login-screen reconciliation, PDF feasibility, database migration/backup and security regression tests.
 
 ## Documentation
 
@@ -35,4 +46,4 @@ Start at [Documentation Index](docs/README.md), then read the current [Requireme
 
 ## Development
 
-No framework, database, hosting provider, or implementation details have been approved yet.
+**Stack direction selected:** Cloudflare Workers + D1 (SQLite) + R2, React/Hono/Drizzle. No production code, infrastructure provisioning, data migration, or deployment has been carried out.

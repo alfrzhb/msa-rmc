@@ -1,7 +1,7 @@
 # Decision Log — RMC MSA Analysis Tool
 
 **Document status:** DRAFT / LIVE REGISTER  
-**Last reviewed:** 28 October 2026 (high-fidelity concept accepted with color revisions)  
+**Last reviewed:** 28 October 2026 (Cloudflare MVP tech stack selected, DEC-033)  
 **Basis:** Requirements Analysis v0.3 and stakeholder feedback
 
 This log distinguishes an item accepted in a requirements review from a full, formally `FROZEN` specification.
@@ -42,6 +42,7 @@ This log distinguishes an item accepted in a requirements review from a full, fo
 | DEC-030 | Official Final PDF includes company logo and Supervisor approval/signature section | Approval record, identity, timestamp and authorized signature asset; branding assets to follow | Product-owner accepted for MVP design; asset/style/legal details OPEN |
 | DEC-031 | Approve Responsive Wireframe v0.2 as the UI/UX design direction for desktop/tablet/mobile | Keep full desktop entry grids; mobile one-part/one-sample entry, compact navigation, card-based history; preserve role/approval flow | **Product-owner UX approval, 28 October 2026**; not statistical/Quality validation or entire project FROZEN |
 | DEC-032 | High-Fidelity UI v0.1 accepted as a general layout/UX direction, **subject to visual refinement**: navy/teal color palette feels too generic/AI-styled | Preserve approved mobile/desktop patterns and usability; require restrained industrial styling, fewer decorative effects and accessible semantic colors before final visual approval | Product-owner qualitative feedback, 28 Oct 2026; **palette NOT approved**, entire spec NOT FROZEN |
+| DEC-033 | Select MVP stack: React/Vite/TypeScript; Tailwind/shadcn; Hono + Cloudflare Workers Static Assets; **D1 (SQLite) + Drizzle**; Cloudflare Access OTP + backend RBAC; private R2; Zod/Vitest/Playwright; GitHub Actions/Wrangler. Preferred HTML/CSS + Browser Run PDF requires PoC | One-client modular monolith with managed infrastructure; **Hostinger and PostgreSQL not chosen for initial MVP**. Backend calculation and approval/audit remain versioned | **Product-owner accepted 28 Oct 2026 — tech stack direction only**. Detailed architecture, Quality criteria and production QA NOT FROZEN |
 
 ## Open decisions (DISCUSSION REQUIRED)
 
@@ -54,7 +55,7 @@ This log distinguishes an item accepted in a requirements review from a full, fo
 | OPEN-006 | Other Admin and Supervisor permission details | **Supervisor-only Approve & Finalize accepted**; known reference write/verify Supervisor-only; deletion/revision safeguards still need implementation review |
 | OPEN-007 | Exceptional disposition and approval lifecycle details | Supervisor Approve & Finalize accepted; signed reports for approved studies, immutable prior revisions; treatment of NG, missing policy or critical warnings still needs Quality-approved rules |
 | OPEN-008 | Detailed PDF design and approval assets | Logo and Supervisor signature/approval block accepted; actual logo/signature assets, signatory title, layout, appendix and any e-signature compliance remain pending |
-| OPEN-009 | Technology stack, hosting, backup and security implementation | Decide after requirements and calculations |
+| OPEN-009 | Infrastructure implementation details, backup, secure Access/JWT integration, Browser Run feasibility and deployment readiness | **Technology stack selected (DEC-033)**; these implementation checks remain OPEN, not a new hosting/database choice |
 | OPEN-010 | Attribute numerical missed-NG / false-reject limits and whole-study verdict | Standard preset + versioned configurable APPROVED policy agreed as design; actual limits/customer approval and global verdict remain open |
 | OPEN-011 | Low-end NDC convention domain check | Design uses Ratama literal floor(NDCraw) when GRR>0; no Minitab minimum-1 parity claim; Ratama reviewer confirmation pending |
 
@@ -158,3 +159,11 @@ No documents in this repository are currently FROZEN.
 - **Technical review required:** S01 screen currently implies local email/password but proposed Access uses hosted OTP. App Admin roles and Access identity allowlisting require coordinated onboarding.
 - D1/R2 finalize is not a distributed transaction: planned safe staged PDF + version-guarded D1 commit must be proven in implementation. Customer Quality criteria and electronic-signature/retention obligations remain open.
 - **No approved architecture decision ID assigned yet**: user requested a recommended stack, not approval to freeze or start coding. No application code or cloud resources created.
+
+
+## Technology stack selected — 2026-10-28 (DEC-033)
+
+- Product owner explicitly selected **Cloudflare Workers + D1 (SQLite) + private R2** for the Ratama MSA MVP after considering Hostinger shared/VPS and external PostgreSQL. React/Vite/TypeScript, Tailwind CSS/shadcn/ui, Hono, Drizzle ORM, Cloudflare Access email OTP, server RBAC, Zod, Vitest, Playwright and GitHub Actions/Wrangler form the accepted baseline.
+- [Tech Stack Decision v1.0](../05-architecture/tech-stack-decision-v1.0.md) documents selection, rejected initial alternatives, architecture boundaries and test gates. [System Architecture v0.1](../05-architecture/system-architecture-v0.1.md) remains the detailed **review draft**.
+- **Cloudflare Browser Run** is the preferred PDF technology but requires staging validation; do not claim rendered PDFs, Access login, security enforcement or migrations have been implemented.
+- **Not approved/frozen:** database ERD, API schema, customer Quality/risk criteria, calculation implementation, S01 login screen reconciliation, actual logo/signature assets, Visual Polish v0.2, cloud costs/backup and production deployment.
