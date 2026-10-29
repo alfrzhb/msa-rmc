@@ -1,0 +1,141 @@
+erDiagram
+    USERS ||--o{ STUDIES : owns
+    STUDIES ||--|{ STUDY_REVISIONS : versions
+    STUDY_REVISIONS ||--o{ APPRAISERS : assigns
+    STUDY_REVISIONS ||--o{ SAMPLES : defines
+    APPRAISERS ||--o{ VARIABLE_READINGS : measures
+    SAMPLES ||--o{ VARIABLE_READINGS : measured_part
+    APPRAISERS ||--o{ ATTRIBUTE_DECISIONS : assesses
+    SAMPLES ||--o{ ATTRIBUTE_DECISIONS : assessed_sample
+    SAMPLES ||--o| ATTRIBUTE_REFERENCES : has_known_reference
+    USERS ||--o{ ATTRIBUTE_REFERENCES : verifies
+    STUDY_REVISIONS ||--o{ CALCULATION_RUNS : calculates
+    JUDGMENT_POLICIES o|--o{ CALCULATION_RUNS : evaluates_with
+    STUDY_REVISIONS ||--o{ REVIEW_REQUESTS : submits
+    CALCULATION_RUNS ||--o{ REVIEW_REQUESTS : submitted_result
+    REVIEW_REQUESTS ||--o| APPROVALS : leads_to
+    STUDY_REVISIONS ||--o| APPROVALS : finalized_by
+    USERS ||--o{ APPROVALS : supervisor
+    APPROVALS ||--|| REPORT_ARTIFACTS : issues
+    BRAND_ASSETS o|--o{ APPROVALS : signs
+    STUDIES o|--o{ AUDIT_EVENTS : recorded_for
+    USERS ||--o{ AUDIT_EVENTS : acts
+    STUDY_REVISIONS o|--o{ AUDIT_EVENTS : context
+
+    USERS {
+        text id PK
+        text access_sub UK
+        text email_norm UK
+        text role
+        boolean is_active
+    }
+    STUDIES {
+        text id PK
+        text study_code UK
+        text msa_type
+        text owner_user_id FK
+        datetime deleted_at
+    }
+    STUDY_REVISIONS {
+        text id PK
+        text study_id FK
+        int revision_no
+        text parent_revision_id FK
+        text lifecycle_status
+        int input_version
+        text study_name
+        text characteristic
+        datetime blind_closed_at
+    }
+    APPRAISERS {
+        text id PK
+        text revision_id FK
+        int slot_no
+        text normalized_name
+    }
+    SAMPLES {
+        text id PK
+        text revision_id FK
+        int slot_no
+        text sample_label
+    }
+    VARIABLE_READINGS {
+        text id PK
+        text revision_id FK
+        text appraiser_id FK
+        text sample_id FK
+        int trial_no
+        text value_decimal
+    }
+    ATTRIBUTE_DECISIONS {
+        text id PK
+        text revision_id FK
+        text appraiser_id FK
+        text sample_id FK
+        int trial_no
+        text decision
+    }
+    ATTRIBUTE_REFERENCES {
+        text id PK
+        text revision_id FK
+        text sample_id FK
+        text known_label
+        text verified_by_user_id FK
+        datetime verified_at
+    }
+    JUDGMENT_POLICIES {
+        text id PK
+        text policy_key
+        int policy_version
+        text status
+        json rules_json
+        text approval_evidence
+    }
+    CALCULATION_RUNS {
+        text id PK
+        text revision_id FK
+        text policy_id FK
+        int input_version
+        text input_hash
+        text method_version
+        json results_json
+    }
+    REVIEW_REQUESTS {
+        text id PK
+        text revision_id FK
+        text calculation_run_id FK
+        text submitted_by_user_id FK
+        text status
+        datetime submitted_at
+    }
+    APPROVALS {
+        text id PK
+        text revision_id FK
+        text review_request_id FK
+        text calculation_run_id FK
+        text approved_by_user_id FK
+        text signature_asset_id FK
+        datetime approved_at
+    }
+    REPORT_ARTIFACTS {
+        text id PK
+        text approval_id FK
+        text r2_key UK
+        text sha256_hex
+        text content_type
+    }
+    BRAND_ASSETS {
+        text id PK
+        text asset_kind
+        text r2_key UK
+        text signer_user_id FK
+        text sha256_hex
+    }
+    AUDIT_EVENTS {
+        text id PK
+        text study_id FK
+        text revision_id FK
+        text actor_user_id FK
+        text action_type
+        datetime happened_at
+    }

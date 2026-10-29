@@ -18,3 +18,7 @@ Do not publish raw client workbooks, appraiser identities or confidential study 
 ## Field & Screen v0.3 product-owner decision tests
 
 - [Field & Screen Specification v0.3](../04-ui-ux/field-and-screen-specification-v0.3.md) extends the UX review matrix to UI-35: Operator all-history read-only rules, Supervisor-only Attribute Known Reference management, explicit Approve & Finalize with actor/time, signed-logo PDF without invented assets, and refusal to certify a study under unapproved Quality rules. Tests are **specified, not yet implemented or run**.
+
+## DB design review (not executed)
+
+- [Database ERD v0.1](../05-architecture/erd-database-v0.1.md) records **DB-01 through DB-18** candidate tests: partial Draft saves, 90/300+50 completeness, composite revision FK, owner/RBAC isolation, stale results, Supervisor-only approval, R2/D1 failure paths and immutable historical PDF. These are design checks, not live D1 regression results.

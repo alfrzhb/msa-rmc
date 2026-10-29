@@ -1,7 +1,7 @@
 # Documentation Index
 
 **Project:** RMC MSA Analysis Tool  
-**Current phase:** MVP tech stack selected (DEC-033); detailed architecture, final visual polish and Quality criteria under review — overall DRAFT / NOT FROZEN  
+**Current phase:** Database ERD + Data Dictionary v0.1 prepared; MVP stack selected (DEC-033); technical review and Quality signoff still pending — DRAFT / NOT FROZEN  
 **Document baseline:** v0.3 — DRAFT / NOT FROZEN
 
 ## Directory map
@@ -12,13 +12,15 @@
 | [02-requirements](02-requirements/README.md) | Detailed functional and non-functional requirements | Pending |
 | [03-calculations](03-calculations/README.md) | Final Calculation Review v0.2, source audit, Variable formulas and Attribute candidates | REVIEW DRAFT |
 | [04-ui-ux](04-ui-ux/README.md) | Field & Screen v0.3, Wireframe Review v0.1, approval/role workflow and signed-PDF placeholders | REVIEW DRAFT |
-| [05-architecture](05-architecture/README.md) | Tech Stack Decision v1.0 selected; System Architecture v0.1 still DRAFT | STACK SELECTED / ARCH REVIEW |
+| [05-architecture](05-architecture/README.md) | Selected stack, ERD v0.1 (15 tables), column-level Data Dictionary and architecture | STACK SELECTED / ERD REVIEW DRAFT |
 | [06-quality-assurance](06-quality-assurance/README.md) | Calculation regression plan and v0.2 method-comparison cases | DRAFT / pending implementation |
 | [decisions](decisions/decision-log.md) | Decision register, approvals, outstanding questions | Active |
 
 ## Reading order
 
 1. [Requirements Analysis v0.3 — DRAFT](01-discovery/requirements-analysis-v0.3.md)
+   - [Database ERD v0.1 — DRAFT / review](05-architecture/erd-database-v0.1.md)
+   - [Data Dictionary v0.1 — DRAFT / review](05-architecture/data-dictionary-v0.1.md)
    - [Tech Stack Decision v1.0 — selected baseline](05-architecture/tech-stack-decision-v1.0.md)
    - [System Architecture v0.1 — detailed architecture DRAFT](05-architecture/system-architecture-v0.1.md)
 2. [Decision Log](decisions/decision-log.md)

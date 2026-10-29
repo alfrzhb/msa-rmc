@@ -1,7 +1,7 @@
 # Decision Log — RMC MSA Analysis Tool
 
 **Document status:** DRAFT / LIVE REGISTER  
-**Last reviewed:** 28 October 2026 (Cloudflare MVP tech stack selected, DEC-033)  
+**Last reviewed:** 29 October 2026 (Database ERD v0.1 produced for technical review)  
 **Basis:** Requirements Analysis v0.3 and stakeholder feedback
 
 This log distinguishes an item accepted in a requirements review from a full, formally `FROZEN` specification.
@@ -167,3 +167,13 @@ No documents in this repository are currently FROZEN.
 - [Tech Stack Decision v1.0](../05-architecture/tech-stack-decision-v1.0.md) documents selection, rejected initial alternatives, architecture boundaries and test gates. [System Architecture v0.1](../05-architecture/system-architecture-v0.1.md) remains the detailed **review draft**.
 - **Cloudflare Browser Run** is the preferred PDF technology but requires staging validation; do not claim rendered PDFs, Access login, security enforcement or migrations have been implemented.
 - **Not approved/frozen:** database ERD, API schema, customer Quality/risk criteria, calculation implementation, S01 login screen reconciliation, actual logo/signature assets, Visual Polish v0.2, cloud costs/backup and production deployment.
+
+
+## Database ERD v0.1 prepared — 2026-10-29 (DRAFT / NOT FROZEN)
+
+- [Database ERD v0.1](../05-architecture/erd-database-v0.1.md) and [Data Dictionary v0.1](../05-architecture/data-dictionary-v0.1.md) document a **15-table candidate relational model** for Cloudflare D1, with a [separate Mermaid source](../05-architecture/erd-v0.1.mmd).
+- Consistent with DEC-027–030 (Supervisor-only finalize/reference; Operator all-history read-only for others; signed final PDF) and DEC-033 (Cloudflare D1/Workers/R2).
+- Variable keeps **90** measurements; Attribute keeps **300** decisions and **50 separate** Supervisor-verified references. Distinguish appraisers from authenticated system editors.
+- Study revisions and stored final PDF/artifacts are designed to be immutable. Partial Drafts, formula/policy versioning, source change invalidation, composite FKs, uniqueness of readings and approval requests, and approval/R2 failure recovery are documented.
+- **18 proposed review scenarios**, including concurrency and cross-revision corruption, are specified but **not executed**.
+- **No new product-owner acceptance, schema FROZEN status, migrations, database provisioning or production implementation claimed.** Next: stakeholder ERD review → D1 migration design → API Contract v0.1 and security/calc QA.

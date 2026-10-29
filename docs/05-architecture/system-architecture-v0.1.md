@@ -73,7 +73,9 @@ Browser (React SPA / responsive Data Grid)
 
 The calculation module is **pure, deterministic TypeScript** and can be unit-tested without Cloudflare or a database.
 
-## 5. Proposed relational model (subject to ERD review)
+## 5. Proposed relational model (companion ERD v0.1 prepared)
+
+**Review the detailed [Database ERD v0.1](erd-database-v0.1.md), [Data Dictionary v0.1](data-dictionary-v0.1.md), and [Mermaid source](erd-v0.1.mmd).** They formalize the 15 candidate tables below with exact input cardinalities and the cross-revision integrity design; they remain **DRAFT, not executable D1 migrations**.
 
 | Table | Main responsibility | Important constraints |
 | --- | --- | --- |
