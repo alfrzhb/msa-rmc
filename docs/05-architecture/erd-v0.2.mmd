@@ -1,0 +1,150 @@
+erDiagram
+    USERS ||--o{ STUDIES : owns
+    STUDIES ||--|{ STUDY_REVISIONS : versions
+    STUDY_REVISIONS o|--o{ STUDY_REVISIONS : parent_of
+    JUDGMENT_POLICIES o|--o{ STUDY_REVISIONS : selected_by
+    STUDY_REVISIONS ||--o{ APPRAISERS : assigns
+    STUDY_REVISIONS ||--o{ SAMPLES : defines
+    APPRAISERS ||--o{ VARIABLE_READINGS : takes
+    SAMPLES ||--o{ VARIABLE_READINGS : measured
+    APPRAISERS ||--o{ ATTRIBUTE_DECISIONS : assesses
+    SAMPLES ||--o{ ATTRIBUTE_DECISIONS : classified
+    SAMPLES ||--o| ATTRIBUTE_REFERENCES : known_reference
+    USERS o|--o{ ATTRIBUTE_REFERENCES : verifies
+    STUDY_REVISIONS ||--o{ CALCULATION_RUNS : computes
+    JUDGMENT_POLICIES o|--o{ CALCULATION_RUNS : applies
+    STUDY_REVISIONS ||--o{ REVIEW_REQUESTS : submits
+    CALCULATION_RUNS ||--o{ REVIEW_REQUESTS : submitted_result
+    REVIEW_REQUESTS ||--o| APPROVALS : reviewed_into
+    CALCULATION_RUNS ||--o| APPROVALS : approved_result
+    STUDY_REVISIONS ||--o| APPROVALS : finalizes
+    USERS ||--o{ APPROVALS : signs_off
+    BRAND_ASSETS o|--o{ APPROVALS : signer_image
+    APPROVALS ||--o| REPORT_ARTIFACTS : issues
+    BRAND_ASSETS o|--o{ REPORT_ARTIFACTS : logo
+    USERS o|--o{ AUDIT_EVENTS : actor
+    STUDIES o|--o{ AUDIT_EVENTS : history
+    STUDY_REVISIONS o|--o{ AUDIT_EVENTS : changed_revision
+
+    USERS {
+        text id PK
+        text access_sub UK
+        text email_norm UK
+        text role
+        int is_active
+    }
+    STUDIES {
+        text id PK
+        text study_code UK
+        text msa_type
+        text owner_user_id FK
+        text deleted_at
+    }
+    STUDY_REVISIONS {
+        text id PK
+        text study_id FK
+        int revision_no
+        text parent_revision_id FK
+        text selected_policy_id FK
+        text lifecycle_status
+        int input_version
+        text current_input_sha256
+        text attribute_lock_status
+        text blind_closed_at
+        text reference_disclosed_at
+    }
+    APPRAISERS {
+        text id PK
+        text revision_id FK
+        int slot_no
+        text normalized_name
+    }
+    SAMPLES {
+        text id PK
+        text revision_id FK
+        int slot_no
+        text normalized_label
+    }
+    VARIABLE_READINGS {
+        text id PK
+        text revision_id FK
+        text appraiser_id FK
+        text sample_id FK
+        int trial_no
+        text value_decimal
+    }
+    ATTRIBUTE_DECISIONS {
+        text id PK
+        text revision_id FK
+        text appraiser_id FK
+        text sample_id FK
+        int trial_no
+        text decision
+    }
+    ATTRIBUTE_REFERENCES {
+        text id PK
+        text revision_id FK
+        text sample_id FK
+        text known_label
+        text verified_by_user_id FK
+        text verified_at
+    }
+    JUDGMENT_POLICIES {
+        text id PK
+        text policy_key
+        int version_no
+        text status
+        text applicability
+        text rules_json
+    }
+    CALCULATION_RUNS {
+        text id PK
+        text revision_id FK
+        text policy_id FK
+        int input_version
+        text input_sha256
+        text method_version
+        text results_json
+    }
+    REVIEW_REQUESTS {
+        text id PK
+        text revision_id FK
+        text calculation_run_id FK
+        int request_no
+        text status
+    }
+    APPROVALS {
+        text id PK
+        text idempotency_key UK
+        text revision_id FK
+        text review_request_id FK
+        text calculation_run_id FK
+        text approved_by_user_id FK
+        text signature_asset_id FK
+        text approved_at
+    }
+    REPORT_ARTIFACTS {
+        text id PK
+        text approval_id FK
+        text logo_asset_id FK
+        text r2_key UK
+        text sha256_hex
+    }
+    BRAND_ASSETS {
+        text id PK
+        text asset_kind
+        text r2_key UK
+        text signer_user_id FK
+        text content_sha256
+    }
+    AUDIT_EVENTS {
+        text id PK
+        text study_id FK
+        text revision_id FK
+        text actor_user_id FK
+        text actor_kind
+        text sensitivity
+        text before_json
+        text after_json
+        text reason
+    }

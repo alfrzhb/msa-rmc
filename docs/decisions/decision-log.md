@@ -1,7 +1,7 @@
 # Decision Log — RMC MSA Analysis Tool
 
 **Document status:** DRAFT / LIVE REGISTER  
-**Last reviewed:** 29 October 2026 (Database ERD v0.1 produced for technical review)  
+**Last reviewed:** 29 October 2026 (ERD + Dictionary v0.2 corrective design review)  
 **Basis:** Requirements Analysis v0.3 and stakeholder feedback
 
 This log distinguishes an item accepted in a requirements review from a full, formally `FROZEN` specification.
@@ -177,3 +177,11 @@ No documents in this repository are currently FROZEN.
 - Study revisions and stored final PDF/artifacts are designed to be immutable. Partial Drafts, formula/policy versioning, source change invalidation, composite FKs, uniqueness of readings and approval requests, and approval/R2 failure recovery are documented.
 - **18 proposed review scenarios**, including concurrency and cross-revision corruption, are specified but **not executed**.
 - **No new product-owner acceptance, schema FROZEN status, migrations, database provisioning or production implementation claimed.** Next: stakeholder ERD review → D1 migration design → API Contract v0.1 and security/calc QA.
+
+
+## ERD v0.2 corrective design — 2026-10-29 (DRAFT; no schema acceptance)
+
+- The user asked to **fix all previously identified v0.1 ERD deficiencies**. Prepared [ERD v0.2](../05-architecture/erd-database-v0.2.md), [Data Dictionary v0.2](../05-architecture/data-dictionary-v0.2.md), [Mermaid v0.2](../05-architecture/erd-v0.2.mmd). Kept v0.1 files unchanged for historical comparison.
+- Retains 15 entities; adds selected_policy_id, current_input_sha256, audit old/new fields, Attribute OPEN/LOCKED/DISCLOSED, SUPERSEDED Draft state, source version invalidation, current policy checks, signer-owner composite FK, strict run/review/approval relationships, report idempotency and D1/R2 failure handling.
+- Documents **20 proposed test scenarios**, including row-level composite FK errors, wrong signer, false reference verification, blind leakage, duplicate finalize and R2 orphan recovery.
+- **Status:** Architectural **DRAFT**, **not** tested D1 migrations or validated statistical/customer policy, and not a new DEC or project-wide FROZEN milestone. Next gate is ERD design approval, then implement and test D1 constraints/triggers and API Contract.

@@ -9,13 +9,14 @@
 - **Hostinger shared/VPS and PostgreSQL** were considered but are **not the selected MVP stack**. No dual database.
 - Modular monolith; no unnecessary microservices, Kubernetes, Redis or extra queues.
 
-## Database schema design — ready for review
+## Database schema design — v0.2 corrected, ready for review
 
-- [Database ERD v0.1](erd-database-v0.1.md) — interactive-renderable Mermaid ERD for **15 candidate tables**, relation cardinality, separate Variable/Attribute source rows, lifecycle and **18 proposed DB validation checks**.
-- [Database Data Dictionary v0.1](data-dictionary-v0.1.md) — column definitions, types, PK/FK/UNIQUE/CHECK constraints, role/blind protections and immutable report provenance.
-- [Raw Mermaid source](erd-v0.1.mmd) — editable diagram without separate image dependencies.
+- **[Database ERD v0.2](erd-database-v0.2.md)** — corrected 15-table Mermaid ERD; nine prioritized v0.1 audit findings addressed in design; 20 unexecuted DB test cases.
+- **[Database Data Dictionary v0.2](data-dictionary-v0.2.md)** — changed/new fields, composite FK consistency, policy selection, source hashing, Attribute blind state, restricted cell audit, signer-owner binding, concurrency-safe report finalization.
+- [Mermaid source v0.2](erd-v0.2.mmd) — editable diagram.
+- Archived baseline: [ERD v0.1](erd-database-v0.1.md), [Data Dictionary v0.1](data-dictionary-v0.1.md) and [Mermaid v0.1](erd-v0.1.mmd).
 
-**Status:** Technical schema **DRAFT**; not executed D1 migrations or deployed database. Cross-revision foreign keys, immutable finalize triggers, D1/R2 reconciliation, quality criteria and retention still require implementation proof.
+**Status:** v0.2 corrections are **DESIGN ONLY / DRAFT**; not executed D1 migrations or deployed database. Cross-revision foreign keys, immutable finalize triggers, D1/R2 reconciliation, quality criteria and retention still require implementation proof.
 
 ## Detailed design under review
 

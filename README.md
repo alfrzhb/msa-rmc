@@ -1,6 +1,6 @@
 # RMC MSA Analysis Tool
 
-**Status:** MVP stack selected (DEC-033); Database ERD v0.1 drafted for review; Quality policy / visual polish remain DRAFT — NOT FROZEN
+**Status:** MVP stack selected (DEC-033); Database ERD v0.2 corrected for review; Quality policy / visual polish remain DRAFT — NOT FROZEN
 
 A lightweight, web-based Measurement System Analysis (MSA) application for an initial single-company client of PT Ratama Mitra Kualitas. This repository currently contains requirements and design documents. The MVP technology stack has been selected, but no product implementation or deployment has been completed.
 
@@ -31,8 +31,9 @@ Help authorized employees create Variable or Attribute MSA studies, enter measur
 | Deployment automation | GitHub Actions + Wrangler |
 
 - **[Tech Stack Decision v1.0 — selected baseline](docs/05-architecture/tech-stack-decision-v1.0.md)** — source of truth for technology selection, why Cloudflare/D1 instead of Hostinger/PostgreSQL, and outstanding verification.
-- **[Database ERD v0.1](docs/05-architecture/erd-database-v0.1.md)** — Mermaid relationship diagram for 15 tables, study/revision/cardinality, integrity gates and 18 DB review checks.
-- [Database Data Dictionary v0.1](docs/05-architecture/data-dictionary-v0.1.md) — column-level D1/SQLite definitions, foreign keys, unique constraints, nullability and immutable records.
+- **[Database ERD v0.2](docs/05-architecture/erd-database-v0.2.md)** — corrected Mermaid model for **15 tables**, nine audit fixes, approval safety, Attribute blind locking and **20 proposed test cases**.
+- [Database Data Dictionary v0.2](docs/05-architecture/data-dictionary-v0.2.md) — revised column-level policy, source hash/version, composite FKs, ownership, audit and report controls.
+- Historical: [ERD v0.1](docs/05-architecture/erd-database-v0.1.md) and [Data Dictionary v0.1](docs/05-architecture/data-dictionary-v0.1.md).
 - [System Architecture Design v0.1](docs/05-architecture/system-architecture-v0.1.md) — **DRAFT** overview, RBAC, API, versioned calculation, concurrency-safe approval/PDF sequencing.
 - **OPEN (not tech selection):** Customer Quality criteria, actual signature assets, Access OTP login-screen reconciliation, PDF feasibility, database migration/backup and security regression tests.
 

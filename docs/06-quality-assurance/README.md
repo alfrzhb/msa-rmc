@@ -22,3 +22,7 @@ Do not publish raw client workbooks, appraiser identities or confidential study 
 ## DB design review (not executed)
 
 - [Database ERD v0.1](../05-architecture/erd-database-v0.1.md) records **DB-01 through DB-18** candidate tests: partial Draft saves, 90/300+50 completeness, composite revision FK, owner/RBAC isolation, stale results, Supervisor-only approval, R2/D1 failure paths and immutable historical PDF. These are design checks, not live D1 regression results.
+
+## ERD v0.2 integrity test plan — not yet executed
+
+- [Corrected Database ERD v0.2](../05-architecture/erd-database-v0.2.md) expands the schema review into **ER2-01 to ER2-20**: composite FK, Attribute blind disclosure, input digest, signer matching, approved policy, audit before/after, concurrent Finalize, D1 rollback, R2 orphan handling and report immutability. These checks require actual Drizzle/D1 integration tests.

@@ -75,13 +75,13 @@ The calculation module is **pure, deterministic TypeScript** and can be unit-tes
 
 ## 5. Proposed relational model (companion ERD v0.1 prepared)
 
-**Review the detailed [Database ERD v0.1](erd-database-v0.1.md), [Data Dictionary v0.1](data-dictionary-v0.1.md), and [Mermaid source](erd-v0.1.mmd).** They formalize the 15 candidate tables below with exact input cardinalities and the cross-revision integrity design; they remain **DRAFT, not executable D1 migrations**.
+**Current detailed candidate: [Database ERD v0.2](erd-database-v0.2.md), [Data Dictionary v0.2](data-dictionary-v0.2.md), [Mermaid v0.2](erd-v0.2.mmd).** These supersede the earlier ERD/Dictionary v0.1 for technical review and specify selected_policy_id, composite review/approval FKs, server-calculated source digest, Attribute OPEN/LOCKED/DISCLOSED, restricted before/after audit and finalization triggers. This overview below is historical v0.1 and remains DRAFT; no D1 migrations have run.
 
 | Table | Main responsibility | Important constraints |
 | --- | --- | --- |
 | users | Access subject, email, name, active flag, Admin/Supervisor/Operator role | Verified Access identity mapped to one active app user |
 | studies | Stable study ID, type, creator, current revision, soft-delete flag | Study type immutable once source data exist |
-| study_revisions | Draft/Finalized revision, parent revision, metadata and lifecycle | Finalized revision cannot be edited |
+| study_revisions | Draft/Finalized/Superseded revision, policy selection, input digest and blind-state lock | Finalized/Superseded immutable; one Draft per study |
 | appraisers | Human identities who performed readings | Distinct within revision; **not** required to have login |
 | samples | Part or sample IDs and order | Unique per revision, stable across appraisers |
 | variable_readings | Revision, appraiser, sample, trial, decimal reading | Unique measurement slot, exactly 90 for validated preset |
